@@ -21,7 +21,6 @@ Begin with a standard [Manjaro installation][6]:
 - Adjust other installation settings to your preference.
 - Let the installation complete, but **do not reboot** yet. Uncheck *Reboot now* and stay in the live session.
 
-
 ## Step 2: Pre-Reboot Adjustments
 
 ### 2.1 *Optional:* Enable Graphical Text Editor for Root
@@ -31,6 +30,7 @@ For users less accustomed to command-line editors like `nano`, you can enable th
 1. Open the menu and go to **System > Add/Remove Software**.
 2. Search for and install the package `xorg-xhost`.
 3. In a terminal, as user, execute:
+
    ```bash
    xhost +
    ```
@@ -160,7 +160,6 @@ Remove the keyfile to clean up:
 cryptsetup luksRemoveKey /dev/sda2 /crypto_keyfile.bin
 rm /crypto_keyfile.bin
 ```
-
 
 ## Step 3: Configure Secure Boot
 
