@@ -1,6 +1,6 @@
 +++
 date = '2024-12-15T23:41:59+01:00'
-draft = true
+draft = false
 title = 'Installing Manjaro With System-Wide Encryption and Btrfs'
 categories = ["Featured", "Linux", "Manjaro", "English"]
 tags = ["en", "linux", "manjaro", "encryption", "btrfs"]
