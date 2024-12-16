@@ -1,6 +1,7 @@
 +++
 date = '2024-12-15T23:41:59+01:00'
 draft = false
+slug = "manjaro-with-system-wide-encryption-and-btrfs"
 title = 'Installing Manjaro With System-Wide Encryption and Btrfs'
 categories = ["Featured", "Linux", "Manjaro", "English"]
 tags = ["en", "linux", "manjaro", "encryption", "btrfs"]
@@ -23,9 +24,9 @@ Begin with a standard [Manjaro installation][6]:
 
 ## Step 2: Pre-Reboot Adjustments
 
-### 2.1 *Optional:* Enable Graphical Text Editor for Root
+### 2.1 *Optional:* Enable Graphical Text Editor for `root`
 
-For users less accustomed to command-line editors like `nano`, you can enable the graphical editor `mousepad` in the live session. To do this:
+For users less accustomed to command-line editors like `nano`, you can enable the graphical editor `mousepad` in the live session:
 
 1. Open the menu and go to **System > Add/Remove Software**.
 2. Search for and install the package `xorg-xhost`.
@@ -35,7 +36,7 @@ For users less accustomed to command-line editors like `nano`, you can enable th
    xhost +
    ```
 
-This allows `mousepad` instances launched from a root session to display in the user’s graphical interface.
+This allows `mousepad` instances launched from a `root` session to display in the user’s graphical interface.
 
 *Note: This change only affects the live session and does not weaken the future installed system.*
 
@@ -49,9 +50,11 @@ mount /dev/mapper/luks-<UUID> /mnt -o subvol=/@
 manjaro-chroot /mnt/
 ```
 
+*(There is normally only one `luks-<UUID>` file. Type `/dev/mapper/luks-` then `TAB` and it should properly complete the proper filename.)*
+
 ### 2.3 Fix the EFI Partition Mount Point
 
-Edit `/etc/fstab` to update the mount point for the EFI partition:
+Edit `/etc/fstab` to update the mount point for the EFI partition: (Replace `nano` with `mousepad` if you prefer a graphical editor.)
 
 ```bash
 nano /etc/fstab
@@ -63,7 +66,7 @@ Change the line for the EFI partition to:
 UUID=<EFI-UUID>  /efi  vfat  defaults,umask=0077  0  2
 ```
 
-Then, create the necessary directory and mount the EFI partition:
+Then, create the necessary directory and mount all the remaining filesystems (including the EFI):
 
 ```bash
 mkdir /efi
@@ -79,7 +82,7 @@ pacman -Rcs grub memtest86+-efi
 bootctl install
 ```
 
-### 2.5 Replace Busybox Initramfs with Systemd Initramfs
+### 2.5 Replace Busybox Initramfs with Systemd Initramfs {#busybox-2-systemd}
 
 Switch to [systemd-based initramfs][3] for improved support of encryption, hibernation, and localisation:
 
@@ -107,7 +110,7 @@ nano /etc/mkinitcpio.d/linux<kernel-version>.preset
 
 Comment the default `<preset>_image=` instruction and uncomment instead the one called `<preset>_uki=`:
 
-```plaintext
+```bash
 #default_config="/etc/mkinitcpio.conf"
 #default_image="/boot/initramfs-6.12-x86_64.img"
 default_uki="/efi/EFI/Linux/manjaro-6.12-x86_64.efi"
@@ -129,9 +132,9 @@ Adjust the kernel command line to properly support the encrypted system. For [UK
 Run the following commands to set this up:
 
 ```bash
-mkdir /etc/cmdline.d/
 UUID_DEV=$(blkid -s UUID -o value /dev/sda2)
 UUID_ROOT=$(blkid -s UUID -o value /dev/mapper/luks-${UUID_DEV})
+mkdir /etc/cmdline.d/
 echo "root=UUID=${UUID_ROOT} rw rootflags=subvol=/@ rd.luks.name=${UUID_DEV}=luks-${UUID_DEV}" > /etc/cmdline.d/00_root.conf
 echo "quiet splash loglevel=3 rd.udev.logpriority=3 vt.globalcursor_default=0" > /etc/cmdline.d/10_quiet.conf
 mkinitcpio -P
@@ -152,7 +155,7 @@ btrfs filesystem mkswapfile --size 16g --uuid clear /swap/swapfile
 
 ### 2.9 Clean Up Encryption Keys
 
-The busybox-based `encrypt` hook relies on `crypto_keyfile.bin` to unlock multiple devices at boot, using GRUB to unlock the main device and the initramfs to unlock others. However, the `sd-encrypt` hook in systemd can unlock multiple devices using a shared password, making the keyfile unnecessary. Furthermore, the keyfile would be stored unencrypted in the EFI partition when using [systemd-boot][1], creating a potential security risk (that's why we removed it from the initramfs at step 2.5).
+The busybox-based `encrypt` hook relies on `crypto_keyfile.bin` to unlock multiple devices at boot, using GRUB to unlock the main device and the initramfs to unlock others. However, the `sd-encrypt` hook in systemd can unlock multiple devices using a shared password, making the keyfile unnecessary. Furthermore, the keyfile would be stored unencrypted in the EFI partition when using [systemd-boot][1], creating a potential security risk (that's why we removed it from the initramfs at [step 2.5][10]).
 
 Remove the keyfile to clean up:
 
@@ -203,7 +206,7 @@ If your system is not in **Setup Mode**, you may reboot now to modify your UEFI 
 
 ---
 
-Congratulations! You've successfully installed Manjaro with system-wide encryption, Btrfs, and Secure Boot. Your system is now secure and optimized for modern workflows, all while supporting advanced features like hibernation and localisation at boot. Enjoy the peace of mind that comes with a robust and well-configured Linux system!
+Done! You've successfully installed Manjaro with system-wide encryption, Btrfs, Secure Boot, hibernation, keymap localisation at boot... 😎 Time to enjoy a cup of coffee! *Cheers* ☕
 
 [1]: https://wiki.archlinux.org/title/Systemd-boot
 [2]: https://wiki.archlinux.org/title/Unified_kernel_image
@@ -214,3 +217,4 @@ Congratulations! You've successfully installed Manjaro with system-wide encrypti
 [7]: https://wiki.manjaro.org/index.php/Btrfs
 [8]: https://wiki.archlinux.org/title/Dm-crypt/Encrypting_an_entire_system#LUKS_on_a_partition
 [9]: https://forum.manjaro.org/t/keyboard-layout-for-boot-encryption-password/115990
+[10]: {{<ref "#busybox-2-systemd">}}
