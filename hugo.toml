@@ -1,6 +1,4 @@
 baseURL = 'https://lucidmechanisms.netlify.app/'
-languageCode = 'en-us'
-title = 'Lucid Mechanisms'
 
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = true
@@ -10,10 +8,10 @@ staticDir = ["static", "themes/Niello/static"]
 theme = "niello"
 
 [params]
-copyright = "&#xA9; 2024 by Tehoor Marjan. CC0."
+    copyright = "&#xA9; 2024 by Tehoor Marjan. CC0."
 
 [outputs]
-  home = ["HTML", "JSON"]
+    home = ["HTML", "JSON"]
 
 [languages]
     [languages.en]
@@ -21,7 +19,10 @@ copyright = "&#xA9; 2024 by Tehoor Marjan. CC0."
         languageCode = "en-us"
         LanguageName = "🇺🇸EN"
         contentDir = "content/en"
-        weight = 1
+        weight = 0
+        [languages.en.permalinks]
+            [languages.en.permalinks.page]
+                posts = "posts/:year/:month/:slug"
         [[languages.en.menus.main]]
             name = 'Home'
             pageRef = '/'
@@ -37,6 +38,9 @@ copyright = "&#xA9; 2024 by Tehoor Marjan. CC0."
         LanguageName = "🇫🇷FR"
         contentDir = "content/fr"
         weight = 1
+        [languages.fr.permalinks]
+            [languages.fr.permalinks.page]
+                posts = "articles/:year/:month/:slug"
         [[languages.fr.menus.main]]
             name = 'Accueil'
             pageRef = '/'
