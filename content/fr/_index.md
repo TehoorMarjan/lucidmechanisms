@@ -1,11 +1,11 @@
 +++
 [banner]
 title = "Lucid Mechanisms"
-content = "Real Virtuality."
+content = "Virtualité Réelle"
 image = "/images/banner.png"
 
 [banner.button]
 enable = true
-label = "Read More"
+label = "Lire la suite"
 link = "https://github.com/zeon-studio/hugoplate"
 +++

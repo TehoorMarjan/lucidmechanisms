@@ -20,13 +20,13 @@
     <!-- cache partial only in production -->
     {{ if hugo.IsProduction }}
       {{ partialCached "preloader.html" . }}
-      {{ partialCached "gtm-noscript.html" . }}
+      <!-- {{ partialCached "gtm-noscript.html" . }} -->
     {{ else }}
       {{ partial "preloader.html" . }}
 
 
       <!-- tailwind size indicator -->
-      <!-- {{ partial "components/tw-size-indicator.html" . }} -->
+      {{ partial "components/tw-size-indicator.html" . }}
     {{ end }}
 
 

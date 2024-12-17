@@ -8,5 +8,7 @@ weight = 2
 [permalinks]
     [permalinks.page]
         posts = "/articles/:year/:month/:slug"
+        authors = "/auteurs/:slug"
     [permalinks.section]
         posts = "/articles/"
+        authors = "/auteurs/"
