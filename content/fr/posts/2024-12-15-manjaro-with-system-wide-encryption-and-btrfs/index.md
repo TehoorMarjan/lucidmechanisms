@@ -3,13 +3,13 @@ date = '2024-12-15T23:41:59+01:00'
 draft = false
 slug = "manjaro-avec-btrfs-et-le-chiffrement-du-systeme-entier"
 title = 'Installer Manjaro avec Btrfs et le chiffrement du système entier'
-categories = ["Featured", "Linux", "Manjaro", "Français"]
-tags = ["fr", "linux", "manjaro", "chiffrement", "btrfs"]
+categories = ["Featured", "Linux", "Manjaro"]
+tags = ["linux", "manjaro", "chiffrement", "btrfs"]
 keywords = ["Manjaro", "Chiffrement Système", "Btrfs", "Secure Boot", "Systemd"]
 description = " Manjaro avec Btrfs et le chiffrement du système entier, Secure Boot et systemd-boot"
+image = "/images/posts/2024-12-15-manjaro-with-system-wide-encryption-and-btrfs/header.webp"
+author = "Tehoor Marjan"
 +++
-
-![Illustration numérique d’un ordinateur portable avec commandes terminales, cadenas de chiffrement, arbre Btrfs et bouclier Secure Boot.](header.webp)
 
 Installer [Manjaro Linux][5] avec un [chiffrement système complet][8] et un système de fichiers moderne [Btrfs][7] peut renforcer considérablement la sécurité et les fonctionnalités de votre système. Malheureusement, [la configuration GRUB par défaut ne gère pas les claviers non-US au démarrage][9], exposant l'utilisateur à une consommation excessive de Doliprane lors de la saisie du mot de passe. Ce guide explique comment configurer le chiffrement, remplacer GRUB par [Systemd-boot][1] et activer le Secure Boot pour une sécurité accrue (et surtout un max de *coolitude* 😁).
 

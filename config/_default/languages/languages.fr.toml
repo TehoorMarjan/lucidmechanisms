@@ -1,0 +1,12 @@
+################ Langue Française ##################
+title = "Lucid Mechanisms"
+languageCode = "fr-FR"
+LanguageName = "🇫🇷FR"
+contentDir = "content/fr"
+weight = 2
+
+[permalinks]
+    [permalinks.page]
+        posts = "/articles/:year/:month/:slug"
+    [permalinks.section]
+        posts = "/articles/"

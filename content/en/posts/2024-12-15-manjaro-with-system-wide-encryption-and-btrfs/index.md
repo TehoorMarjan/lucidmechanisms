@@ -3,13 +3,13 @@ date = '2024-12-15T23:41:59+01:00'
 draft = false
 slug = "manjaro-with-system-wide-encryption-and-btrfs"
 title = 'Installing Manjaro With System-Wide Encryption and Btrfs'
-categories = ["Featured", "Linux", "Manjaro", "English"]
-tags = ["en", "linux", "manjaro", "encryption", "btrfs"]
+categories = ["Featured", "Linux", "Manjaro"]
+tags = ["linux", "manjaro", "encryption", "btrfs"]
 keywords = ["Manjaro", "System-Wide Encryption", "Btrfs", "Secure Boot", "Systemd"]
 description = "Manjaro with System-Wide Encryption and Btrfs with Secure Boot and systemd boot"
+image = "images/posts/2024-12-15-manjaro-with-system-wide-encryption-and-btrfs/header.webp"
+author = "Tehoor Marjan"
 +++
-
-![Digital illustration of a laptop with terminal commands, encryption lock, Btrfs tree, and Secure Boot shield.](header.webp)
 
 Installing [Manjaro Linux][5] with [system-wide encryption][8] and a modern [Btrfs filesystem][7] can significantly enhance your system's security and functionality. However, [the default GRUB configuration doesn't account for non-US keymaps at boot][9], potentially causing headaches when entering your encryption password. This guide walks you through setting up encryption, replacing GRUB with [Systemd-boot][1], and configuring Secure Boot for increased security (and *cooliness* 😁).
 

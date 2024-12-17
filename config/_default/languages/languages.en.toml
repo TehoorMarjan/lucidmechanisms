@@ -1,0 +1,12 @@
+################ English language ##################
+title = "Lucid Mechanisms"
+languageCode = "en-us"
+LanguageName = "🇺🇸EN"
+contentDir = "content/en"
+weight = 1
+
+[permalinks]
+    [permalinks.page]
+        posts = "/posts/:year/:month/:slug"
+    [permalinks.section]
+        posts = "/posts/"

@@ -1,0 +1,33 @@
+############# English navigation ##############
+
+# main menu
+[[main]]
+name = "Accueil"
+url = "/"
+weight = 1
+
+[[main]]
+name = "Articles"
+url = "/articles/"
+weight = 2
+
+[[main]]
+name = "Moi"
+url = "/moi"
+weight = 3
+
+# footer menu
+[[footer]]
+name = "Accueil"
+url = "/"
+weight = 1
+
+[[footer]]
+name = "Moi"
+url = "/moi"
+weight = 2
+
+[[footer]]
+name = "Politique de Confidentialité"
+url = "/privacy-policy"
+weight = 3
