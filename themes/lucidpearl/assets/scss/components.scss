@@ -17,11 +17,11 @@ main {
 
 // form style
 .form-input {
-  @apply bg-theme-light text-dark placeholder:text-light focus:border-primary dark:border-darkmode-border dark:bg-darkmode-theme-light dark:text-darkmode-light w-full rounded border-transparent px-6 py-4 focus:ring-transparent;
+  @apply w-full rounded border-transparent bg-theme-light px-6 py-4 text-dark placeholder:text-light focus:border-primary focus:ring-transparent dark:border-darkmode-border dark:bg-darkmode-theme-light dark:text-darkmode-light;
 }
 
 .form-label {
-  @apply font-secondary text-dark dark:text-darkmode-light mb-4 block text-xl font-normal;
+  @apply mb-4 block font-secondary text-xl font-normal text-dark dark:text-darkmode-light;
 }
 
 // social icons
@@ -30,7 +30,7 @@ main {
   li {
     @apply inline-block;
     a {
-      @apply bg-primary dark:bg-darkmode-primary dark:text-dark flex h-9 w-9 items-center justify-center rounded text-center leading-9 text-white;
+      @apply flex h-9 w-9 items-center justify-center rounded bg-primary text-center leading-9 text-white dark:bg-darkmode-primary dark:text-dark;
       svg {
         @apply h-5 w-5;
       }
@@ -40,10 +40,10 @@ main {
 
 // swiper pagination
 .swiper-pagination-bullet {
-  @apply bg-theme-light dark:bg-darkmode-theme-light h-2.5 w-2.5 opacity-100 mx-1.5 #{!important};
+  @apply mx-1.5 h-2.5 w-2.5 bg-theme-light opacity-100 dark:bg-darkmode-theme-light #{!important};
 
   &-active {
-    @apply bg-primary dark:bg-darkmode-primary h-4 w-4 #{!important};
+    @apply h-4 w-4 bg-primary dark:bg-darkmode-primary #{!important};
   }
 }
 
@@ -69,6 +69,6 @@ main {
   @apply prose-tr:border-border prose-tr:dark:border-darkmode-border;
   @apply prose-td:relative prose-td:z-10 prose-td:px-3 prose-td:py-[18px] prose-td:dark:text-darkmode-text;
   .btn {
-    @apply dark:hover:text-dark no-underline hover:text-white #{!important};
+    @apply no-underline hover:text-white dark:hover:text-dark #{!important};
   }
 }

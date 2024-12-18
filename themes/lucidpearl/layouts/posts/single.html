@@ -3,17 +3,17 @@
     <div class="container">
       <div class="row justify-center">
         <article class="lg:col-10">
-          <div class="mb-10 relative min-h-64 sm:min-h-48">
+          <div class="relative mb-10 min-h-64 sm:min-h-48">
             {{ $image:= .Params.image }}
             {{ if $image }}
-                {{ partial "image" (dict "Src" $image "Context" .Page "Alt" .Title "Class" "w-full rounded") }}
+              {{ partial "image" (dict "Src" $image "Context" .Page "Alt" .Title "Class" "w-full rounded") }}
             {{ end }}
             <div class="absolute bottom-1 left-3 right-3">
               <h1 class="h2 mb-4 text-white">
                 {{ .Title }}
               </h1>
               <ul class="mb-4 text-white dark:text-white">
-                <li class="mr-4 inline-block ">
+                <li class="mr-4 inline-block">
                   <a
                     href="{{ ((site.GetPage "authors").GetPage (urls.URLize .Params.author)).RelPermalink }}">
                     <i class="fa-regular fa-circle-user mr-2"></i
@@ -26,9 +26,7 @@
                     <i class="fa-regular fa-folder mr-2"></i>
                     {{ range $i, $p := $categories }}
                       {{ $catPage := ($.Site.GetPage "categories").GetPage $p }}
-                      <a
-                        href="{{ $catPage.RelPermalink }}"
-                        class=""
+                      <a href="{{ $catPage.RelPermalink }}" class=""
                         >{{ $catPage.Title | humanize }}{{ if ne $i (sub (len $categories) 1) }}
                           {{ "," }}
                         {{ end }}
@@ -50,14 +48,14 @@
           <div class="row items-start justify-between">
             {{ $tags:= .Params.tags }}
             {{ if $tags }}
-              <div class="lg:col-5 mb-10 flex items-center lg:mb-0">
+              <div class="mb-10 flex items-center lg:col-5 lg:mb-0">
                 <h5 class="mr-3">{{ T "tags" }} :</h5>
                 <ul>
                   {{ range $i,$p:= $tags }}
-                  {{ $tagPage := ($.Site.GetPage "tags").GetPage $p }}
+                    {{ $tagPage := ($.Site.GetPage "tags").GetPage $p }}
                     <li class="inline-block">
                       <a
-                        class="bg-theme-light hover:bg-primary dark:bg-darkmode-theme-light dark:hover:bg-darkmode-primary dark:hover:text-dark m-1 block rounded px-3 py-1 hover:text-white"
+                        class="m-1 block rounded bg-theme-light px-3 py-1 hover:bg-primary hover:text-white dark:bg-darkmode-theme-light dark:hover:bg-darkmode-primary dark:hover:text-dark"
                         href="{{ $tagPage.RelPermalink }}">
                         {{ $tagPage.Title | humanize }}
                       </a>
@@ -66,7 +64,7 @@
                 </ul>
               </div>
             {{ end }}
-            <div class="lg:col-4 flex items-center">
+            <div class="flex items-center lg:col-4">
               {{ partial "social-share" (dict "Context" . "Class" "share-icons" "Title" (T "share") "Whatsapp" false "Telegram" false "Linkedin" false "Pinterest" false "Tumblr" false "Vk" false) }}
             </div>
           </div>
@@ -87,7 +85,7 @@
           <h2 class="h3 mb-12">{{ T "related_posts" }}</h2>
           <div class="row">
             {{ range . }}
-              <div class="lg:col-4 md:col-6 mb-14">
+              <div class="mb-14 md:col-6 lg:col-4">
                 {{ partial "components/blog-card" . }}
               </div>
             {{ end }}

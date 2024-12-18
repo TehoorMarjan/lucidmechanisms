@@ -1,5 +1,6 @@
 {
-  "plugins": ["prettier-plugin-go-template"],
+  "plugins": ["prettier-plugin-go-template", "prettier-plugin-tailwindcss"],
+  "tailwindStylesheet": "./themes/lucidpearl/assets/scss/main.scss",
   "overrides": [
     {
       "files": ["*.html"],
@@ -7,6 +8,18 @@
         "parser": "go-template",
         "goTemplateBracketSpacing": true,
         "bracketSameLine": true
+      }
+    },
+    {
+      "files": ["*.md"],
+      "options": {
+        "proseWrap": "always"
+      }
+    },
+    {
+      "files": ["README", "readme.md"],
+      "options": {
+        "proseWrap": "never"
       }
     }
   ]

@@ -12,7 +12,7 @@ input#nav-toggle:checked ~ #nav-menu {
 }
 
 .header {
-  @apply bg-body dark:bg-darkmode-body py-6;
+  @apply bg-body py-6 dark:bg-darkmode-body;
 }
 
 // navbar items
@@ -21,7 +21,7 @@ input#nav-toggle:checked ~ #nav-menu {
 }
 
 .navbar-brand {
-  @apply text-dark dark:text-darkmode-dark text-xl font-semibold;
+  @apply text-xl font-semibold text-dark dark:text-darkmode-dark;
   image {
     @apply max-h-full max-w-full;
   }
@@ -36,7 +36,7 @@ input#nav-toggle:checked ~ #nav-menu {
 // }
 
 .nav-link {
-  @apply text-dark hover:text-primary dark:text-darkmode-dark dark:hover:text-darkmode-primary block p-3 cursor-pointer font-semibold transition lg:px-2 lg:py-3;
+  @apply block cursor-pointer p-3 font-semibold text-dark transition hover:text-primary dark:text-darkmode-dark dark:hover:text-darkmode-primary lg:px-2 lg:py-3;
 }
 
 .nav-dropdown {
@@ -52,7 +52,7 @@ input#nav-toggle:checked ~ #nav-menu {
 }
 
 .nav-dropdown-list {
-  @apply bg-body dark:bg-darkmode-body z-10 min-w-[180px] rounded p-4 shadow hidden lg:invisible lg:absolute lg:block lg:opacity-0;
+  @apply z-10 hidden min-w-[180px] rounded bg-body p-4 shadow dark:bg-darkmode-body lg:invisible lg:absolute lg:block lg:opacity-0;
 }
 
 .nav-dropdown-item {
@@ -60,7 +60,7 @@ input#nav-toggle:checked ~ #nav-menu {
 }
 
 .nav-dropdown-link {
-  @apply text-dark hover:text-primary dark:text-darkmode-text dark:hover:text-darkmode-primary block py-1 font-semibold transition;
+  @apply block py-1 font-semibold text-dark transition hover:text-primary dark:text-darkmode-text dark:hover:text-darkmode-primary;
 }
 
 //theme-switcher
@@ -68,7 +68,7 @@ input#nav-toggle:checked ~ #nav-menu {
   @apply inline-flex;
 
   label {
-    @apply bg-border relative inline-block h-4 w-6 cursor-pointer rounded-2xl lg:w-10;
+    @apply relative inline-block h-4 w-6 cursor-pointer rounded-2xl bg-border lg:w-10;
   }
 
   input {
@@ -76,7 +76,7 @@ input#nav-toggle:checked ~ #nav-menu {
   }
 
   span {
-    @apply bg-dark absolute -top-1 left-0 flex h-6 w-6 items-center justify-center rounded-full transition-all duration-300 dark:bg-white;
+    @apply absolute -top-1 left-0 flex h-6 w-6 items-center justify-center rounded-full bg-dark transition-all duration-300 dark:bg-white;
   }
 
   input:checked + label {

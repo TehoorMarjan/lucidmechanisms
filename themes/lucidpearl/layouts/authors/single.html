@@ -2,8 +2,8 @@
   <section class="section-sm pb-0">
     <div class="container">
       <div
-        class="row border-border dark:border-darkmode-border justify-center border-b pb-14">
-        <div class="lg:col-4 text-center">
+        class="row justify-center border-b border-border pb-14 dark:border-darkmode-border">
+        <div class="text-center lg:col-4">
           {{ $image:= .Params.image }}
           {{ if $image }}
             {{ partial "image" (dict "Src" $image "Context" .Page "Alt" .Title "Class" "mx-auto" "Size" "200x200") }}
@@ -38,7 +38,7 @@
       <div class="row pb-16 pt-14">
         {{ $filterByAuthor := where site.RegularPages "Params.author" "==" .Title }}
         {{ range $filterByAuthor }}
-          <div class="md:col-6 lg:col-4 mb-12">
+          <div class="mb-12 md:col-6 lg:col-4">
             {{ partial "components/blog-card" . }}
           </div>
         {{ end }}

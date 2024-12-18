@@ -1,4 +1,3 @@
-
 <!-- Language List -->
 {{ if hugo.IsMultilingual }}
   {{ $class := .Class }}
@@ -14,22 +13,21 @@
     {{ $pageTranslations.Set .Language.Lang .Permalink }}
   {{ end }}
 
+
   <select class="{{ $class }}" onchange="location = this.value">
     {{ range site.Languages }}
       {{/* Fill the dropdown with all known languages */}}
       {{ $link := $pageTranslations.Get .Lang }}
       {{ if $link }}
         <option
+          {{ if eq .Lang $pageLang }}
+            selected=""
+          {{ end }}
           id="{{ .Lang }}"
-          value="{{ $link }}"
-        {{ if eq .Lang $pageLang }}
-          selected
-        {{ end }}
-          >
+          value="{{ $link }}">
           {{ .LanguageName }}
         </option>
-      {{ else }}
-        {{/* if we can't safely redirect the user to the translated page or at least to translated home, discard the language from options */}}
+      {{/* else, if we can't safely redirect the user to the translated page or at least to translated home, discard the language from options */}}
       {{ end }}
     {{ end }}
   </select>

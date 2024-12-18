@@ -1,18 +1,19 @@
 <div class="bg-body dark:bg-darkmode-body">
   <div class="relative mb-3">
     <a href="{{ .RelPermalink }}">
-    {{ $image:= .Params.image }}
-    {{ if $image }}
-      {{ partial "image" (dict "Src" $image "Context" .Page "Alt" .Title "Class" "mb-6 w-full rounded") }}
-    {{ end }}
-    <h4 class="absolute bottom-2 right-2 left-2 text-white">
+      {{ $image:= .Params.image }}
+      {{ if $image }}
+        {{ partial "image" (dict "Src" $image "Context" .Page "Alt" .Title "Class" "mb-6 w-full rounded") }}
+      {{ end }}
+      <h4 class="absolute bottom-2 left-2 right-2 text-white">
         {{ .Title }}
-    </h4>
+      </h4>
     </a>
   </div>
   <ul class="mb-4">
     <li class="mr-4 inline-block">
-      <a href="{{ ((site.GetPage "authors").GetPage (urls.URLize .Params.author)).Permalink }}">
+      <a
+        href="{{ ((site.GetPage "authors").GetPage (urls.URLize .Params.author)).Permalink }}">
         <i class="fa-regular fa-circle-user mr-2"></i>{{ .Params.author }}
       </a>
     </li>
@@ -21,10 +22,8 @@
       <li class="mr-4 inline-block">
         <i class="fa-regular fa-folder mr-1"></i>
         {{ range $i,$p:= $categories }}
-        {{ $catPage := ($.Site.GetPage "categories").GetPage $p }}
-          <a
-            href="{{ $catPage.RelPermalink }}"
-            class="ms-1"
+          {{ $catPage := ($.Site.GetPage "categories").GetPage $p }}
+          <a href="{{ $catPage.RelPermalink }}" class="ms-1"
             >{{ $catPage.Title | humanize }}{{ if ne $i (sub (len $categories) 1) }}
               {{ "," }}
             {{ end }}

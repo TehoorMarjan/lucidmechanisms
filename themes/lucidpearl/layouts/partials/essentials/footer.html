@@ -1,7 +1,7 @@
 <footer class="bg-theme-light dark:bg-darkmode-theme-light">
   <div class="container">
     <div class="row items-center py-10">
-      <div class="lg:col-3 mb-8 text-center lg:mb-0 lg:text-left">
+      <div class="mb-8 text-center lg:col-3 lg:mb-0 lg:text-left">
         <!-- navbar brand/logo -->
         <a
           class="navbar-brand inline-block"
@@ -9,7 +9,7 @@
           {{ partial "logo" }}
         </a>
       </div>
-      <div class="lg:col-6 mb-8 text-center lg:mb-0">
+      <div class="mb-8 text-center lg:col-6 lg:mb-0">
         <ul>
           {{ range site.Menus.footer }}
             <li class="m-3 inline-block">
@@ -30,7 +30,7 @@
           {{ end }}
         </ul>
       </div>
-      <div class="lg:col-3 mb-8 text-center lg:mb-0 lg:mt-0 lg:text-right">
+      <div class="mb-8 text-center lg:col-3 lg:mb-0 lg:mt-0 lg:text-right">
         <ul class="social-icons">
           {{ range site.Data.social.main }}
             <li>
@@ -47,8 +47,8 @@
       </div>
     </div>
   </div>
-  <div class="border-border dark:border-darkmode-border border-t py-7">
-    <div class="text-light dark:text-darkmode-light container text-center">
+  <div class="border-t border-border py-7 dark:border-darkmode-border">
+    <div class="container text-center text-light dark:text-darkmode-light">
       <p>
         {{ site.Params.copyright | markdownify }}
       </p>
