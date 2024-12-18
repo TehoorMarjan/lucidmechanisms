@@ -1,11 +1,3 @@
 +++
-[banner]
 title = "Lucid Mechanisms"
-content = "Real Virtuality."
-image = "/images/banner.png"
-
-[banner.button]
-enable = true
-label = "Read More"
-link = "https://github.com/zeon-studio/hugoplate"
 +++
