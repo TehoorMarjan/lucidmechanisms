@@ -1,14 +1,14 @@
 +++
+author = 'Cilyan Olowen'
+categories = ['python', 'code']
 date = '2016-01-23T12:00:53+01:00'
+description = 'Draw between different subplots on a single Matplotlib figure'
 draft = false
-slug = "matplotlib-draw-between-subplots"
-title = "Matplotlib: draw between subplots"
-categories = ["python", "code"]
-tags = ["featured", "python", "matplotlib", "pandas", "code"]
-keywords = ["matplotlib", "subplots", "figure", "python", "pandas"]
-description = "Draw between different subplots on a single Matplotlib figure"
-image = "images/posts/2016-01-23-matplotlib-draw-between-subplots/header.webp"
-author = "Cilyan Olowen"
+image = 'images/posts/2016-01-23-matplotlib-draw-between-subplots/header.webp'
+keywords = ['matplotlib', 'subplots', 'figure', 'python', 'pandas']
+slug = 'matplotlib-draw-between-subplots'
+tags = ['featured', 'python', 'matplotlib', 'pandas', 'code']
+title = 'Matplotlib: draw between subplots'
 +++
 
 Last week, I was preparing a data analysis report using

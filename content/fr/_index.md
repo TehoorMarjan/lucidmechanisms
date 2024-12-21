@@ -1,3 +1,3 @@
 +++
-title = "Lucid Mechanisms"
+title = 'Lucid Mechanisms'
 +++

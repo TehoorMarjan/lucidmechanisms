@@ -1,5 +1,5 @@
----
-title: "Articles"
-meta_title: ""
-description: "Liste des Articles Publiés"
----
++++
+description = 'Liste des Articles Publiés'
+meta_title = ''
+title = 'Articles'
++++

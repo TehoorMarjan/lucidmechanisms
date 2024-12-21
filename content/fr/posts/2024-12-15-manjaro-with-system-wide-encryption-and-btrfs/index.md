@@ -1,14 +1,14 @@
 +++
+author = 'Tehoor Marjan'
+categories = ['linux', 'manjaro']
 date = '2024-12-15T23:41:59+01:00'
+description = ' Manjaro avec Btrfs et le chiffrement du système entier, Secure Boot et systemd-boot'
 draft = false
-slug = "manjaro-avec-btrfs-et-le-chiffrement-du-systeme-entier"
+image = '/images/posts/2024-12-15-manjaro-with-system-wide-encryption-and-btrfs/header.webp'
+keywords = ['Manjaro', 'Chiffrement Système', 'Btrfs', 'Secure Boot', 'Systemd']
+slug = 'manjaro-avec-btrfs-et-le-chiffrement-du-systeme-entier'
+tags = ['featured', 'linux', 'manjaro', 'encryption', 'btrfs']
 title = 'Installer Manjaro avec Btrfs et le chiffrement du système entier'
-categories = ["linux", "manjaro"]
-tags = ["featured", "linux", "manjaro", "encryption", "btrfs"]
-keywords = ["Manjaro", "Chiffrement Système", "Btrfs", "Secure Boot", "Systemd"]
-description = " Manjaro avec Btrfs et le chiffrement du système entier, Secure Boot et systemd-boot"
-image = "/images/posts/2024-12-15-manjaro-with-system-wide-encryption-and-btrfs/header.webp"
-author = "Tehoor Marjan"
 +++
 
 Installer [Manjaro Linux][5] avec un [chiffrement système complet][8] et un

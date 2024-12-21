@@ -1,14 +1,14 @@
 +++
+author = 'Tehoor Marjan'
+categories = ['linux', 'manjaro']
 date = '2024-12-15T23:41:59+01:00'
+description = 'Manjaro with System-Wide Encryption and Btrfs with Secure Boot and systemd boot'
 draft = false
-slug = "manjaro-with-system-wide-encryption-and-btrfs"
+image = 'images/posts/2024-12-15-manjaro-with-system-wide-encryption-and-btrfs/header.webp'
+keywords = ['Manjaro', 'System-Wide Encryption', 'Btrfs', 'Secure Boot', 'Systemd']
+slug = 'manjaro-with-system-wide-encryption-and-btrfs'
+tags = ['featured', 'linux', 'manjaro', 'encryption', 'btrfs']
 title = 'Installing Manjaro With System-Wide Encryption and Btrfs'
-categories = ["linux", "manjaro"]
-tags = ["featured", "linux", "manjaro", "encryption", "btrfs"]
-keywords = ["Manjaro", "System-Wide Encryption", "Btrfs", "Secure Boot", "Systemd"]
-description = "Manjaro with System-Wide Encryption and Btrfs with Secure Boot and systemd boot"
-image = "images/posts/2024-12-15-manjaro-with-system-wide-encryption-and-btrfs/header.webp"
-author = "Tehoor Marjan"
 +++
 
 Installing [Manjaro Linux][5] with [system-wide encryption][8] and a modern

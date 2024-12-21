@@ -1,14 +1,14 @@
 +++
-date = '2016-01-23T12:00:53+01:00'  
+author = 'Cilyan Olowen'
+categories = ['python', 'code']
+date = '2016-01-23T12:00:53+01:00'
+description = 'Dessiner entre différents sous-graphiques sur une seule figure Matplotlib'
 draft = false
-slug = "matplotlib-dessiner-entre-les-sous-graphiques"
-title = "Matplotlib : dessiner entre les sous-graphiques"
-categories = ["python", "code"]
-tags = ["featured", "python", "matplotlib", "pandas", "code"]
-keywords = ["matplotlib", "sous-graphiques", "figure", "python", "pandas"]
-description = "Dessiner entre différents sous-graphiques sur une seule figure Matplotlib"
-image = "images/posts/2016-01-23-matplotlib-draw-between-subplots/header.webp"
-author = "Cilyan Olowen"
+image = 'images/posts/2016-01-23-matplotlib-draw-between-subplots/header.webp'
+keywords = ['matplotlib', 'sous-graphiques', 'figure', 'python', 'pandas']
+slug = 'matplotlib-dessiner-entre-les-sous-graphiques'
+tags = ['featured', 'python', 'matplotlib', 'pandas', 'code']
+title = 'Matplotlib : dessiner entre les sous-graphiques'
 +++
 
 La semaine dernière, je préparais un rapport d'analyse de données avec
