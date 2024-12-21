@@ -15,7 +15,7 @@ title = 'Cilyan Olowen'
   name = 'youtube'
 
 [[social]]
-  icon = 'fa-brands fa-stackoverflow'
+  icon = 'fa-brands fa-stack-overflow'
   link = 'https://stackoverflow.com/users/1970751/cilyan'
   name = 'stackoverflow'
 +++
