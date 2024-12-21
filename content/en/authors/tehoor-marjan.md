@@ -20,6 +20,15 @@ title = 'Tehoor Marjan'
   name = 'linkedin'
 +++
 
-lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostr
-navigation et dolore magna aliqua.
+Hi there!  
+I'm Tehoor, an engineer, developer, and graphic designer passionate about
+tinkering with technology, electronics, and Linux systems
+(ArchLinux/Manjaro/Alpine).
+
+On _Lucid Mechanisms_, I explore the art of hacking — whether it's tips on
+Linux, insights on electronics, or tutorials to inspire creators like you. When
+I'm not coding in Python, C/C++, PHP, Web techs (you name it), I’m crafting with
+Inkscape, sometimes Blender, or experimenting with ESP32, RaspberryPi, from
+KiCAD to firmware development.
+
+**✨From spark to real through virtual**
