@@ -18,6 +18,11 @@ title = 'Cilyan Olowen'
   icon = 'fa-brands fa-stack-overflow'
   link = 'https://stackoverflow.com/users/1970751/cilyan'
   name = 'stackoverflow'
+
+[[social]]
+  icon = 'fa-solid fa-code'
+  link = 'https://www.codingame.com/profile/21703b57be9cf864a1e6706972442924468428'
+  name = 'codingame'
 +++
 
 Hi there!  
