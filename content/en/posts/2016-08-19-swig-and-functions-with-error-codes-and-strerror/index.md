@@ -3,7 +3,7 @@ author = 'Cilyan Olowen'
 categories = ['c', 'code', 'python']
 date = '2016-08-19T08:30:05+01:00'
 description = 'Integrate properly functions with error codes and strerror using SWIG wrapper'
-draft = true
+draft = false
 image = 'images/posts/2016-08-19-swig-and-functions-with-error-codes-and-strerror/header.webp'
 keywords = ["swig", "strerror", "wrapper", "python"]
 slug = 'swig-and-functions-with-error-codes-and-strerror'
@@ -21,7 +21,7 @@ meaning of a special error code. This is a pretty usual mechanism for C code.
 But that's not the way scripting languages work. In their world, functions are
 rather supposed to raise exceptions.
 
-_If you are familiar with SWIG, you may prefer to skip to the last section._
+_If you are familiar with SWIG, you may prefer to [skip to the last section]({{<ref "#raising-exceptions">}})._
 
 ## Example Library
 
