@@ -3,6 +3,7 @@ description = "Page d'Auteur de Tehoor Marjan"
 email = 'tehoor.marjan@gmail.com'
 image = 'images/authors/tehoor-marjan.jpg'
 title = 'Tehoor Marjan'
+weight = 1
 
 [[social]]
   icon = 'fa-brands fa-github'

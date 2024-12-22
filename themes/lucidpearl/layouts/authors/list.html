@@ -4,9 +4,9 @@
 
   <section class="section">
     <div class="container">
-      <div class="row">
+      <div class="grid gap-8 lg:grid-cols-2 xl:grid-cols-3">
         {{ range .RegularPages }}
-          <div class="mb-14 md:col-6 lg:col-4">
+          <div class="col-span-1 mb-14 flex flex-col">
             {{ partial "components/author-card" . }}
           </div>
         {{ end }}

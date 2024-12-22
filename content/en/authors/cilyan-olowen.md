@@ -3,6 +3,7 @@ description = "Author Page of Cilyan Olowen"
 email = 'gaknar@gmail.com'
 image = 'images/authors/cilyan-olowen.png'
 title = 'Cilyan Olowen'
+weight = 2
 
 [[social]]
   icon = 'fa-brands fa-github'

@@ -12,9 +12,14 @@ url = "/articles/"
 weight = 2
 
 [[main]]
-name = "Moi"
-url = "/moi"
+name = "Auteurs"
+url = "/auteurs/"
 weight = 3
+
+#[[main]]
+#name = "Moi"
+#url = "/moi"
+#weight = 4
 
 # footer menu
 [[footer]]
@@ -23,11 +28,11 @@ url = "/"
 weight = 1
 
 [[footer]]
-name = "Moi"
+name = "À Propos"
 url = "/moi"
 weight = 2
 
-[[footer]]
-name = "Politique de Confidentialité"
-url = "/privacy-policy"
-weight = 3
+#[[footer]]
+#name = "Politique de Confidentialité"
+#url = "/privacy-policy"
+#weight = 3
