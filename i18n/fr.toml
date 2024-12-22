@@ -1,80 +1,20 @@
-[sitename]
-other = "Lucid Mechanisms"
-
-[siteslogan]
-other = "Virtualité Réelle"
-
-[siteseokeywords]
-other = "lucid mechanisms code électronique linux open-source création bricolage"
-
-[siteseodescription]
-other = "Site personel et blog à propos d'open-source, de codage et de création."
-
-[search]
-other = "Rechercher"
-
-[searchplaceholder]
-other = "Mots clefs..."
-
-[searching]
-other = "Recherche..."
-
-[keywordmissing]
-other = "Merci d'entrer un mot ou une phrase ci-dessus pour la recherche."
-
-[nomatch]
-other = "Aucune correspondance trouvée"
-
-[home]
-other = "Accueil"
-
-[next]
-other = "Suivant >>"
-
-[previous]
-other = "<< Précédent"
-
-[recommendpost]
-other = "Articles Recommandés"
-
-[intro]
-other = "À Propos"
-
-[topost]
-other = "Dernier Article"
-
-[topcat]
-other = "Catégories"
-
-[toptag]
-other = "Top Tags"
-
-[archive]
-other = "Archives"
-
-[contact]
-other = "Contact"
-
-[emptypost]
-other = "Aucun Article"
-
-[emptycat]
-other = "Aucune Catégorie"
-
-[emptytag]
-other = "Aucun Tag"
-
-[emptyarchive]
-other = "Aucune Archive"
-
-[missing404title]
-other = "Page non trouvée"
-
-[missing404body]
-other = "Désolé, la page que vous cherchez n'a pas été trouvée."
-
-[articlelink]
-other = "Lien vers la page"
-
-[archivefmt]
-other = "Jan, 2006"
+about = "À Propos"
+authors = "Auteurs"
+categories = "Catégories"
+home = "Accueil"
+latest_posts = "Derniers Articles"
+read_more = "Lire la suite"
+recommended_posts = "Articles Recommandés"
+related_posts = "Articles Similaires"
+search_close = "pour fermer"
+search_initial_message = "Commencer à taper pour rechercher.."
+search_input_placeholder = "Chercher un article..."
+search_navigate = "pour naviguer"
+search_no_results = "Aucun résultat pour"
+search_select = "pour sélectionner"
+send = "Envoyer"
+share = "Partager"
+site_subtitle = "Virtualité Réelle"
+site_title = "Lucid Mechanisms"
+tags = "Tags"
+toc = "Table des Matières"

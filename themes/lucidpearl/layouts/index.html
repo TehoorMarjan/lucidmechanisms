@@ -1,0 +1,58 @@
+{{ define "main" }}
+  <section>
+    <div class="container text-center">
+      <div
+        class="rounded-2xl bg-gradient-to-b from-body to-theme-light px-8 py-14 dark:from-darkmode-body dark:to-darkmode-theme-light">
+        <h1>{{ i18n "site_title" | markdownify }}</h1>
+        <p class="h5 mt-6">
+          {{ i18n "site_subtitle" | markdownify }}
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section pt-4">
+    <div class="container">
+      <div class="row gx-5">
+        <!-- blog posts -->
+        <div class="lg:col-9">
+          <div class="row mb-8">
+            <div>
+              <h5 class="mb-6 border-b pb-2">
+                <i class="fa-solid fa-fire-flame-curved"></i>
+                {{ T "recommended_posts" }}
+              </h5>
+
+              <!-- Auto Play Banner -->
+
+              {{ partial "widgets/banner.html" . }}
+            </div>
+          </div>
+
+          <div class="row">
+            <div>
+              <h5 class="mb-6 border-b pb-2">
+                <i class="fa-regular fa-newspaper"></i>
+                {{ T "latest_posts" }}
+              </h5>
+            </div>
+            {{ $paginator:= .Paginate (where .Site.RegularPages "Section" "in" .Site.Params.mainSections) }}
+            {{ range $paginator.Pages }}
+              <div class="mb-14 md:col-6">
+                {{ partial "components/blog-card" . }}
+              </div>
+            {{ end }}
+          </div>
+          {{ partial "components/pagination.html" . }}
+        </div>
+        <!-- sidebar -->
+        <div class="lg:col-3">
+          <!-- widget -->
+          {{ partial "widgets/about-image" . }}
+          {{ $widget:= site.Params.widgets.sidebar }}
+          {{ partialCached "widgets/widget-wrapper" ( dict "Widgets" $widget "Scope" . ) }}
+        </div>
+      </div>
+    </div>
+  </section>
+{{ end }}

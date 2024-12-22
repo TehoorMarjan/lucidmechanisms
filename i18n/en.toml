@@ -1,80 +1,20 @@
-[sitename]
-other = "Lucid Mechanisms"
-
-[siteslogan]
-other = "Real Virtuality"
-
-[siteseokeywords]
-other = "lucid mechanisms code electonics linux open-source creation DIY"
-
-[siteseodescription]
-other = "Personal website and blog about open-source, code and creation."
-
-[search]
-other = "Search"
-
-[searchplaceholder]
-other = "Input Keywords..."
-
-[searching]
-other = "Searching..."
-
-[keywordmissing]
-other = "Please enter a word or phrase above to search."
-
-[nomatch]
-other = "No matches found"
-
-[home]
-other = "Home"
-
-[next]
-other = "Next >>"
-
-[previous]
-other = "<< Previous"
-
-[recommendpost]
-other = "Recommend Posts"
-
-[intro]
-other = "About"
-
-[topost]
-other = "Latest Post"
-
-[topcat]
-other = "Categories"
-
-[toptag]
-other = "Top Tags"
-
-[archive]
-other = "Archives"
-
-[contact]
-other = "Contact"
-
-[emptypost]
-other = "No Regular Posts"
-
-[emptycat]
-other = "No Categories"
-
-[emptytag]
-other = "No Tags"
-
-[emptyarchive]
-other = "No Archives"
-
-[missing404title]
-other = "Page not found"
-
-[missing404body]
-other = "Sorry, we couldn’t find the page you’re looking for."
-
-[articlelink]
-other = "Page link"
-
-[archivefmt]
-other = "Jan, 2006"
+about = "About"
+authors = "Authors"
+categories = "Categories"
+home = "Home"
+latest_posts = "Latest Posts"
+read_more = "Read More"
+recommended_posts = "Recommended Posts"
+related_posts = "Related Posts"
+search_close = "to close"
+search_initial_message = "Type something to search.."
+search_input_placeholder = "Search Post..."
+search_navigate = "to navigate"
+search_no_results = "No results for"
+search_select = "to select"
+send = "Send"
+share = "Share"
+site_subtitle = "Real Virtuality"
+site_title = "Lucid Mechanisms"
+tags = "Tags"
+toc = "Table of Contents"
