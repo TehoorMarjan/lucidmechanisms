@@ -1,5 +1,4 @@
 +++
-author = 'Tehoor Marjan'
 date = '2024-12-22T02:03:27+01:00'
 description = 'Who am I?'
 draft = false
