@@ -12,3 +12,26 @@ weight = 2
     [permalinks.section]
         posts = "/articles/"
         authors = "/auteurs/"
+
+[params]
+# copyright
+copyright = '<i class="fa-brands fa-creative-commons-zero"></i> 2024 par [Tehoor Marjan]({{< ref "/" >}}). [Licence CC0 1.0 Universel](https://creativecommons.org/publicdomain/zero/1.0/deed.fr).'
+
+    # Navigation button
+    [params.navigation_button]
+    label = "Qui suis-je ?"
+    link = "/moi"
+
+    # seo meta data for OpenGraph / Twitter Card
+    # seo module: https://github.com/gethugothemes/hugo-modules/tree/master/seo-tools/basic-seo
+    [params.metadata]
+    keywords = ["lucid", "mechanisms", "code", "électronique", "linux", "open-source", "création", "bricolage", "hacking"]
+    description = "Site web personnel et blog traitant de l'open-source, de code et de créations en tous genres."
+    author = "Tehoor Marjan"
+    twitter = ""
+    image = "images/og-image.png"
+
+    # Image placed in the sidebar
+    [params.about_image]
+    image = "images/about-image.webp"
+    link = "/moi"

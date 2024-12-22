@@ -1,48 +1,58 @@
 {{ define "main" }}
-  <!-- Banner -->
-  <section class="pb-8 pt-4">
-    <div class="container">
-      <div class="row justify-center">
-        <div class="mb-8 text-center md:col-9 lg:col-7">
-          <h1 class="mb-3 text-h3 lg:text-h1">
-            {{ i18n "site_title" | markdownify }}
-          </h1>
-          <p class="text-h6 lg:text-h5">
-            {{ i18n "site_subtitle" | markdownify }}
-          </p>
-        </div>
+  <section>
+    <div class="container text-center">
+      <div
+        class="rounded-2xl bg-gradient-to-b from-body to-theme-light px-8 py-14 dark:from-darkmode-body dark:to-darkmode-theme-light">
+        <h1>{{ i18n "site_title" | markdownify }}</h1>
+        <p class="h5 mt-6">
+          {{ i18n "site_subtitle" | markdownify }}
+        </p>
       </div>
     </div>
   </section>
-  <!-- /Banner -->
 
-  <section class="pt-4">
+  <section class="section pt-4">
     <div class="container">
-      <!-- Icon -->
-      <div
-        class="mb-3 flex flex-row items-center justify-start gap-x-2 border-b pb-2 text-2xl font-normal">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="currentColor"
-          class="size-6">
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M15.362 5.214A8.252 8.252 0 0 1 12 21 8.25 8.25 0 0 1 6.038 7.047 8.287 8.287 0 0 0 9 9.601a8.983 8.983 0 0 1 3.361-6.867 8.21 8.21 0 0 0 3 2.48Z" />
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M12 18a3.75 3.75 0 0 0 .495-7.468 5.99 5.99 0 0 0-1.925 3.547 5.975 5.975 0 0 1-2.133-1.001A3.75 3.75 0 0 0 12 18Z" />
-        </svg>
+      <div class="row gx-5">
+        <!-- blog posts -->
+        <div class="lg:col-9">
+          <div class="row mb-8">
+            <div>
+              <h5 class="mb-6 border-b pb-2">
+                <i class="fa-solid fa-fire-flame-curved"></i>
+                {{ T "recommended_posts" }}
+              </h5>
 
-        {{ i18n "recommended_post" }}
+              <!-- Auto Play Banner -->
+
+              {{ partial "widgets/banner.html" . }}
+            </div>
+          </div>
+
+          <div class="row">
+            <div>
+              <h5 class="mb-6 border-b pb-2">
+                <i class="fa-regular fa-newspaper"></i>
+                {{ T "latest_posts" }}
+              </h5>
+            </div>
+            {{ $paginator:= .Paginate (where .Site.RegularPages "Section" "in" .Site.Params.mainSections) }}
+            {{ range $paginator.Pages }}
+              <div class="mb-14 md:col-6">
+                {{ partial "components/blog-card" . }}
+              </div>
+            {{ end }}
+          </div>
+          {{ partial "components/pagination.html" . }}
+        </div>
+        <!-- sidebar -->
+        <div class="lg:col-3">
+          <!-- widget -->
+          {{ partial "widgets/about-image" . }}
+          {{ $widget:= site.Params.widgets.sidebar }}
+          {{ partialCached "widgets/widget-wrapper" ( dict "Widgets" $widget "Scope" . ) }}
+        </div>
       </div>
-
-      <!-- Auto Play Banner -->
-      {{ partial "widgets/banner.html" . }}
     </div>
   </section>
 {{ end }}

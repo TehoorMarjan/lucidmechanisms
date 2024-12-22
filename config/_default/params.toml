@@ -26,8 +26,6 @@ google_tag_manager = "" # example: G-XXXXXXXXXX
 google_adsense = ""     # example: ca-pub-xxxxxxxxxxxxxxxx
 # custom script on header, example: custom_script= "<script>console.log(\"Hello World\")</script>"
 custom_script = ""
-# copyright
-copyright = "&#xA9; 2024 by Tehoor Marjan. CC0."
 
 # Preloader
 # preloader module: https://github.com/gethugothemes/hugo-modules/tree/master/components/preloader
@@ -37,9 +35,7 @@ preloader = "" # use jpg, png, svg or gif format.
 
 # Navigation button
 [navigation_button]
-enable = false
-label = "get a quote"
-link = "contact"
+enable = true
 
 # search
 # search module: https://github.com/gethugothemes/hugo-modules/tree/master/search
@@ -50,16 +46,6 @@ include_sections = ["posts"]
 show_image = true
 show_description = true
 show_tags = true
-
-# seo meta data for OpenGraph / Twitter Card
-# seo module: https://github.com/gethugothemes/hugo-modules/tree/master/seo-tools/basic-seo
-[metadata]
-keywords = ["lucid", "mechanisms", "code", "electonics", "linux", "open-source", "creation", "DIY"]
-description = "Personal website and blog about open-source, code and creation."
-author = "Tehoor Marjan"
-twitter = ""
-image = "images/og-image.png"
-
 
 # site verifications
 # verification module: https://github.com/gethugothemes/hugo-modules/tree/master/seo-tools/site-verifications
@@ -77,7 +63,7 @@ js_url = 'https://cdn.jsdelivr.net/npm/mermaid@latest/dist/mermaid.esm.min.mjs'
 
 ######################## sidebar widgets #########################
 [widgets]
-sidebar = ["categories", "tags"]
+sidebar = ["categories", "tags", "authors"]
 
 
 # google map
