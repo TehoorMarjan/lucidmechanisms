@@ -11,3 +11,20 @@ hugo.linux
 
 # Temporary lock file while building
 /.hugo_build.lock
+
+# Some platforms temporary files
+Thumbs.db
+.DS_Store
+.dist
+.tmp
+.lock
+
+# Node stuffs
+.sass-cache
+npm-debug.log
+node_modules
+builds
+jsconfig.json
+
+# Temporary
+/_bin/

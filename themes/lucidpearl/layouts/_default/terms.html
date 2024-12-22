@@ -1,0 +1,41 @@
+{{ define "main" }}
+  {{ partial "page-header" . }}
+
+
+  <section class="section">
+    <div class="container">
+      <ul class="text-center">
+        {{/* categories */}}
+        {{ if eq .Permalink (`categories/` | absLangURL) }}
+          {{ range site.Taxonomies.categories.ByCount }}
+            <li class="m-3 inline-block">
+              <a
+                href="{{ .Page.Permalink }}"
+                class="block rounded bg-theme-light px-4 py-2 text-xl text-dark dark:bg-darkmode-theme-light dark:text-darkmode-dark">
+                {{ .Page.Title }}
+                <span class="ml-2 rounded bg-body px-2 dark:bg-darkmode-body">
+                  {{ .Count }}
+                </span>
+              </a>
+            </li>
+          {{ end }}
+        {{ end }}
+        {{/* tags */}}
+        {{ if eq .Permalink (`tags/` | absLangURL) }}
+          {{ range site.Taxonomies.tags.ByCount }}
+            <li class="m-3 inline-block">
+              <a
+                href="{{ .Page.Permalink }}"
+                class="block rounded bg-theme-light px-4 py-2 text-xl text-dark dark:bg-darkmode-theme-light dark:text-darkmode-dark">
+                {{ .Page.Title }}
+                <span class="ml-2 rounded bg-body px-2 dark:bg-darkmode-body">
+                  {{ .Count }}
+                </span>
+              </a>
+            </li>
+          {{ end }}
+        {{ end }}
+      </ul>
+    </div>
+  </section>
+{{ end }}

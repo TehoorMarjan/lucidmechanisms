@@ -1,0 +1,38 @@
+############# English navigation ##############
+
+# main menu
+[[main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[main]]
+name = "Posts"
+url = "/posts/"
+weight = 2
+
+[[main]]
+name = "Authors"
+url = "/authors/"
+weight = 3
+
+#[[main]]
+#name = "Me"
+#url = "/me"
+#weight = 4
+
+# footer menu
+[[footer]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[footer]]
+name = "About"
+url = "/me"
+weight = 2
+
+#[[footer]]
+#name = "Privacy Policy"
+#url = "/privacy-policy"
+#weight = 3

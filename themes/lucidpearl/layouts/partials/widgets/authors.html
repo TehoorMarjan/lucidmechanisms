@@ -1,0 +1,26 @@
+<!-- authors -->
+{{ $authors := (where .Site.RegularPages.ByWeight "Section" "authors") }}
+{{ if not (eq (len $authors) 0) }}
+  <div class="mb-8">
+    <h5 class="mb-6 border-b pb-2">
+      <i class="fa-solid fa-feather-pointed"></i>
+      {{ T "authors" }}
+    </h5>
+    <div class="rounded bg-theme-light p-8 dark:bg-darkmode-theme-light">
+      <ul class="space-y-4">
+        {{ range $authors }}
+          <li>
+            <a
+              class="{{ if (and (eq $.Page.Kind `term`) (eq $.Page.Type `authors`) (eq $.Page.Title .Page.Title)) }}
+                active
+              {{ end }} flex justify-between hover:text-primary dark:hover:text-darkmode-primary"
+              href="{{ .Page.RelPermalink }}">
+              {{ $filterByAuthor := where site.RegularPages "Params.author" "==" .Title }}
+              {{ .Page.Title }} <span>( {{ len $filterByAuthor }} )</span>
+            </a>
+          </li>
+        {{ end }}
+      </ul>
+    </div>
+  </div>
+{{ end }}

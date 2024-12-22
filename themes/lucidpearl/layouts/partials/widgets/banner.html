@@ -1,0 +1,132 @@
+<div
+  class="relative h-96 w-full overflow-hidden rounded-2xl border bg-body dark:bg-darkmode-body lg:mx-0">
+  <div
+    id="swiper"
+    class="flex flex-row transition-transform duration-300 ease-in-out">
+    {{ $pages := where site.RegularPages "Params.tags" "intersect" (slice "featured") }}
+    {{ if gt (len $pages) 0 }}
+      {{ $leading := first 1 $pages }}
+      {{ $tailing := last 1 $pages }}
+      {{ $pages = $tailing | append $pages }}
+      {{ $pages = $pages | append $leading }}
+      <!-- Range Posts-->
+      {{ range $index, $element := $pages }}
+        <div class="relative h-96 w-full flex-shrink-0">
+          <a href="{{ .RelPermalink }}" class="hover:cursor-pointer">
+            {{ $image:= .Params.image }}
+            {{ if $image }}
+              {{ partial "image" (dict "Src" $image "Context" .Page "Alt" .Title "Class" "w-full h-96 object-cover rounded-2xl") }}
+            {{ end }}
+            <div
+              class="absolute inset-x-0 bottom-0 h-auto overflow-hidden rounded-b-2xl bg-gray-600/30 pb-5 pt-3 backdrop-blur-xl">
+              <h3
+                class="mt-2 line-clamp-1 py-2 text-center text-2xl font-medium leading-none text-white">
+                {{ if gt (len .Title) 0 }}{{ .Title }}{{ else }}-{{ end }}
+              </h3>
+            </div>
+          </a>
+        </div>
+      {{ end }}
+    {{ end }}
+  </div>
+  <div
+    id="prevBanner"
+    class="absolute left-0 top-1/3 h-32 w-8 rounded-br-3xl rounded-tr-3xl border border-l-0 bg-body backdrop-blur-2xl hover:cursor-pointer hover:font-bold hover:text-border dark:bg-darkmode-body hover:dark:text-darkmode-border">
+    <a
+      href="#"
+      rel="nofollow"
+      class="absolute left-1/3 top-1/3 inline-block h-full w-full text-2xl font-medium"
+      >&lt;</a
+    >
+  </div>
+  <div
+    id="nextBanner"
+    class="absolute right-0 top-1/3 h-32 w-8 rounded-bl-3xl rounded-tl-3xl border border-r-0 bg-body backdrop-blur-2xl hover:cursor-pointer hover:font-bold hover:text-border dark:bg-darkmode-body hover:dark:text-darkmode-border">
+    <a
+      href="#"
+      rel="nofollow"
+      class="absolute left-1/3 top-1/3 inline-block h-full w-full text-2xl font-medium"
+      >&gt;</a
+    >
+  </div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const swiper = document.getElementById("swiper");
+    let currentIndex = 1; // Start at the first real image
+    const totalImages = swiper.children.length; // Total images (including duplicates)
+    const slideWidth = swiper.offsetWidth; // Width of each image
+    let interval = null; // Timer for autoplay
+
+    // Initial setup
+    swiper.style.transform = `translateX(-${currentIndex * slideWidth}px)`; // Start at the first real image
+    swiper.style.transition = "none"; // No transition for initial setup
+
+    // Move to Next Slide
+    function moveToNextSlide() {
+      currentIndex++;
+      swiper.style.transition = "transform 0.3s ease-in-out";
+      swiper.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+
+      // Check if at the duplicated last image
+      if (currentIndex === totalImages - 1) {
+        setTimeout(function () {
+          swiper.style.transition = "none"; // Disable animation for instant jump
+          currentIndex = 1; // Reset to the first real image
+          swiper.style.transform = `translateX(-${slideWidth}px)`;
+        }, 300); // Match this with the transition duration (300 ms)
+      }
+    }
+
+    // Move to Previous Slide
+    function moveToPreviousSlide() {
+      currentIndex--;
+      swiper.style.transition = "transform 0.3s ease-in-out";
+      swiper.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+
+      // Check if at the duplicated first image
+      if (currentIndex === 0) {
+        setTimeout(function () {
+          swiper.style.transition = "none"; // Disable animation for instant jump
+          currentIndex = totalImages - 2; // Reset to the last real image
+          swiper.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+        }, 300); // Match this with the transition duration (300 ms)
+      }
+    }
+
+    // Start AutoPlay
+    function startAutoPlay() {
+      interval = setInterval(moveToNextSlide, 6000);
+    }
+
+    // Stop AutoPlay
+    function stopAutoPlay() {
+      clearInterval(interval);
+    }
+
+    // Pause on Mouse Enter, Resume on Mouse Leave
+    swiper.addEventListener("mouseenter", stopAutoPlay);
+    swiper.addEventListener("mouseleave", startAutoPlay);
+
+    // Manual Controls
+    document
+      .getElementById("prevBanner")
+      .addEventListener("click", function () {
+        stopAutoPlay();
+        moveToPreviousSlide();
+        startAutoPlay();
+      });
+
+    document
+      .getElementById("nextBanner")
+      .addEventListener("click", function () {
+        stopAutoPlay();
+        moveToNextSlide();
+        startAutoPlay();
+      });
+
+    // Start AutoPlay initially
+    startAutoPlay();
+  });
+</script>

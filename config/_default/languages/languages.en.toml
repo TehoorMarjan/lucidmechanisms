@@ -1,0 +1,37 @@
+################ English language ##################
+title = "Lucid Mechanisms"
+languageCode = "en-us"
+LanguageName = "🇺🇸EN"
+contentDir = "content/en"
+weight = 1
+
+[permalinks]
+    [permalinks.page]
+        posts = "/posts/:year/:month/:slug"
+        authors = "/authors/:slug"
+    [permalinks.section]
+        posts = "/posts/"
+        authors = "/authors/"
+
+[params]
+# copyright
+copyright = '<i class="fa-brands fa-creative-commons-zero"></i> 2024 by [Tehoor Marjan]({{< ref "/" >}}). [CC0 1.0 Universal License](https://creativecommons.org/publicdomain/zero/1.0/).'
+
+    # Navigation button
+    [params.navigation_button]
+    label = "Who am I?"
+    link = "/me"
+
+    # seo meta data for OpenGraph / Twitter Card
+    # seo module: https://github.com/gethugothemes/hugo-modules/tree/master/seo-tools/basic-seo
+    [params.metadata]
+    keywords = ["lucid", "mechanisms", "code", "electonics", "linux", "open-source", "creation", "DIY", "hacking"]
+    description = "Personal website and blog about open-source, code and creation."
+    author = "Tehoor Marjan"
+    twitter = ""
+    image = "images/og-image.png"
+
+    # Image placed in the sidebar
+    [params.about_image]
+    image = "images/about-image.webp"
+    link = "/me"

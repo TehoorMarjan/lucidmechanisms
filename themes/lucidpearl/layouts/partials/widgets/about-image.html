@@ -1,0 +1,12 @@
+<!-- about -->
+<div class="mb-8">
+  <h5 class="mb-6 border-b pb-2">
+    <i class="fa-regular fa-heart"></i>
+    {{ T "about" }}
+  </h5>
+  <div class="rounded bg-theme-light dark:bg-darkmode-theme-light">
+    <a href="{{ .Site.Params.about_image.link | relLangURL }}">
+      {{ partial "image" (dict "Src" .Site.Params.about_image.image "Alt" (T "about") "Class" "w-full self-center rounded" "Size" "256x256") }}
+    </a>
+  </div>
+</div>

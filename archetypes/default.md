@@ -1,9 +1,12 @@
 +++
+author = 'Tehoor Marjan'
+categories = ['example']
 date = '{{ .Date }}'
+description = 'SEO Description Here'
 draft = true
+image = 'images/posts/{{ .File.ContentBaseName }}/header.webp'
+keywords = ["seo", "keywords", "here"]
+slug = '{{ .File.ContentBaseName }}'
+tags = ['featured', 'example']
 title = '{{ replace .File.ContentBaseName "-" " " | title }}'
-categories = ["Example 1 - EN"]
-tags = ["eg1 - en"]
-keywords = ["SEO", "Keywords", "Here"]
-description = "SEO Description Here"
 +++
