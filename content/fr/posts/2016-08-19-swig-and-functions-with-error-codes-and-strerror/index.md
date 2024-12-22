@@ -28,7 +28,13 @@ dernière section]({{<ref "#lever-des-exceptions">}})._
 
 ## Bibliothèque d'exemple
 
-Imaginons une petite bibliothèque simple pour servir d'exemple aux explications ci-dessous. Elle a des fonctions `init` et `do_something`. Les deux renvoient un code entier spécial qui indique si l'appel a réussi et sinon, quelle erreur s'est produite. Une fonction de type `strerror` est disponible pour récupérer une description textuelle d'un code d'erreur donné. De cette façon, une application utilisant notre bibliothèque peut afficher à son utilisateur final une meilleure explication de ce qui a mal tourné.
+Imaginons une petite bibliothèque simple pour servir d'exemple aux explications
+ci-dessous. Elle a des fonctions `init` et `do_something`. Les deux renvoient un
+code entier spécial qui indique si l'appel a réussi et sinon, quelle erreur
+s'est produite. Une fonction de type `strerror` est disponible pour récupérer
+une description textuelle d'un code d'erreur donné. De cette façon, une
+application utilisant notre bibliothèque peut afficher à son utilisateur final
+une meilleure explication de ce qui a mal tourné.
 
 ```c
 /**

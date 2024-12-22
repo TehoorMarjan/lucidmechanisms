@@ -21,7 +21,8 @@ meaning of a special error code. This is a pretty usual mechanism for C code.
 But that's not the way scripting languages work. In their world, functions are
 rather supposed to raise exceptions.
 
-_If you are familiar with SWIG, you may prefer to [skip to the last section]({{<ref "#raising-exceptions">}})._
+_If you are familiar with SWIG, you may prefer to [skip to the last
+section]({{<ref "#raising-exceptions">}})._
 
 ## Example Library
 
