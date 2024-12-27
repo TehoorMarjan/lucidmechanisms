@@ -98,10 +98,10 @@ scripts.
 ### ⚠️ Exceptions
 
 The [Cilyan.org avatar ](assets/images/authors/cilyan-olowen.png) is ©
-2005-2024 Cilyan Olowen, All rights reserved. The
-[Tehoor Marjan avatar](assets/images/authors/tehoor-marjan.jpg) is © 2024
-Tehoor Marjan, All rights reserved. The
-[Lucid Mechanisms logo](assets/images/about-image.webp) is © 2024 Tehoor
+2005-2024 Cilyan Olowen, All rights reserved.  
+The [Tehoor Marjan avatar](assets/images/authors/tehoor-marjan.jpg) is © 2024
+Tehoor Marjan, All rights reserved.  
+The [Lucid Mechanisms logo](assets/images/about-image.webp) is © 2024 Tehoor
 Marjan, All rights reserved.
 
 Some files of the `lucidpearl` theme are from [Hugoplate][4] and are © 2023 -
@@ -114,8 +114,5 @@ and [themes/lucidpearl/LICENSE](themes/lucidpearl/LICENSE) for more details.
 
 ---
 
-<div style="text-align: center">
-
 Made with ♥ by [Tehoor Marjan](https://lucidmechanisms.netlify.app/)
 
-</div>
