@@ -1,5 +1,5 @@
 <div
-  class="relative h-96 w-full overflow-hidden rounded-2xl border bg-body dark:bg-darkmode-body lg:mx-0">
+  class="relative md:h-96 w-full overflow-hidden rounded-2xl border bg-body dark:bg-darkmode-body lg:mx-0">
   <div
     id="swiper"
     class="flex flex-row transition-transform duration-300 ease-in-out">
@@ -11,11 +11,11 @@
       {{ $pages = $pages | append $leading }}
       <!-- Range Posts-->
       {{ range $index, $element := $pages }}
-        <div class="relative h-96 w-full flex-shrink-0">
+        <div class="relative md:h-96 w-full flex-shrink-0">
           <a href="{{ .RelPermalink }}" class="hover:cursor-pointer">
             {{ $image:= .Params.image }}
             {{ if $image }}
-              {{ partial "image" (dict "Src" $image "Context" .Page "Alt" .Title "Class" "w-full h-96 object-cover rounded-2xl") }}
+              {{ partial "image" (dict "Src" $image "Context" .Page "Alt" .Title "Class" "w-full md:h-96 object-cover rounded-2xl") }}
             {{ end }}
             <div
               class="absolute inset-x-0 bottom-0 h-auto overflow-hidden rounded-b-2xl bg-gray-600/30 pb-5 pt-3 backdrop-blur-xl">
