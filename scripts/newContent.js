@@ -25,7 +25,10 @@ const enContentPath = path.join(
   process.cwd(),
   `./content/en/posts/${folderName}`,
 );
-const frContentPath = path.join(process.cwd(), `./content/fr/posts/${folderName}`);
+const frContentPath = path.join(
+  process.cwd(),
+  `./content/fr/posts/${folderName}`,
+);
 const indexPath = path.join(enContentPath, "index.md");
 
 // Create the necessary folders

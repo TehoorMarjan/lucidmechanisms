@@ -115,4 +115,3 @@ and [themes/lucidpearl/LICENSE](themes/lucidpearl/LICENSE) for more details.
 ---
 
 Made with ♥ by [Tehoor Marjan](https://lucidmechanisms.netlify.app/)
-
