@@ -7,7 +7,7 @@ draft = false
 image = 'images/posts/2016-08-19-swig-and-functions-with-error-codes-and-strerror/header.webp'
 keywords = ["swig", "strerror", "wrapper", "python"]
 slug = 'swig-and-functions-with-error-codes-and-strerror'
-tags = ['featured', 'python', 'SWIG', 'c', 'code']
+tags = ['python', 'SWIG', 'c', 'code']
 title = 'SWIG and functions with error codes and strerror'
 +++
 
