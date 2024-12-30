@@ -1,0 +1,32 @@
+name: Sanity Check
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+permissions:
+  contents: read
+
+jobs:
+  sanity:
+    name: Sanity Check
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: "recursive"
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "23"
+          cache: "yarn"
+
+      - name: Install dependencies
+        run: yarn install
+
+      - name: Sanity Check
+        run: yarn format:check
