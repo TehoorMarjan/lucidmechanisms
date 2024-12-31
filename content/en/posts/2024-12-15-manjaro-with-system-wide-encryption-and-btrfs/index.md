@@ -7,7 +7,7 @@ draft = false
 image = 'images/posts/2024-12-15-manjaro-with-system-wide-encryption-and-btrfs/header.webp'
 keywords = ['Manjaro', 'System-Wide Encryption', 'Btrfs', 'Secure Boot', 'Systemd']
 slug = 'manjaro-with-system-wide-encryption-and-btrfs'
-tags = ['featured', 'linux', 'manjaro', 'encryption', 'btrfs']
+tags = ['linux', 'manjaro', 'encryption', 'btrfs']
 title = 'Installing Manjaro With System-Wide Encryption and Btrfs'
 +++
 

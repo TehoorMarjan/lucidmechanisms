@@ -7,7 +7,7 @@ draft = false
 image = '/images/posts/2024-12-15-manjaro-with-system-wide-encryption-and-btrfs/header.webp'
 keywords = ['Manjaro', 'Chiffrement Système', 'Btrfs', 'Secure Boot', 'Systemd']
 slug = 'manjaro-avec-btrfs-et-le-chiffrement-du-systeme-entier'
-tags = ['featured', 'linux', 'manjaro', 'encryption', 'btrfs']
+tags = ['linux', 'manjaro', 'encryption', 'btrfs']
 title = 'Installer Manjaro avec Btrfs et le chiffrement du système entier'
 +++
 

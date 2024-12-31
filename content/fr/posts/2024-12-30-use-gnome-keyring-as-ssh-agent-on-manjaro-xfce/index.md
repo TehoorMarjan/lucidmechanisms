@@ -7,7 +7,7 @@ draft = false
 image = 'images/posts/2024-12-30-use-gnome-keyring-as-ssh-agent-on-manjaro-xfce/header.webp'
 keywords = ["Manjaro", "XFCE", "GNOME Keyring", "ssh-agent"]
 slug = 'utiliser-gnome-keyring-comme-ssh-agent-sur-manjaro-xfce'
-tags = ['featured', 'linux', 'manjaro', 'xfce', 'ssh-agent']
+tags = ['linux', 'manjaro', 'xfce', 'ssh-agent']
 title = 'Utiliser GNOME Keyring comme agent SSH sur Manjaro XFCE'
 +++
 
