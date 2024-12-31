@@ -7,7 +7,7 @@ draft = false
 image = 'images/posts/2016-01-23-matplotlib-draw-between-subplots/header.webp'
 keywords = ['matplotlib', 'sous-graphiques', 'figure', 'python', 'pandas']
 slug = 'matplotlib-dessiner-entre-les-sous-graphiques'
-tags = ['featured', 'python', 'matplotlib', 'pandas', 'code']
+tags = ['python', 'matplotlib', 'pandas', 'code']
 title = 'Matplotlib : dessiner entre les sous-graphiques'
 +++
 

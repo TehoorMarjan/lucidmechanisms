@@ -3,7 +3,8 @@
   <div
     id="swiper"
     class="flex flex-row transition-transform duration-300 ease-in-out">
-    {{ $pages := where site.RegularPages "Params.tags" "intersect" (slice "featured") }}
+    {{ $featured := .Site.Data.featured.featured }}
+    {{ $pages := where site.RegularPages "TranslationKey" "in" $featured }}
     {{ if gt (len $pages) 0 }}
       {{ $leading := first 1 $pages }}
       {{ $tailing := last 1 $pages }}

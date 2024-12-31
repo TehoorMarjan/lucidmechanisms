@@ -57,7 +57,7 @@ path = "github.com/gethugothemes/hugo-modules/components/render-link"
 path = "github.com/gethugothemes/hugo-modules/shortcodes/button"
 
 [[imports]]
-path = "github.com/gethugothemes/hugo-modules/shortcodes/notice"
+path = "./modules/notice"
 
 [[imports]]
 path = "github.com/gethugothemes/hugo-modules/seo-tools/basic-seo"

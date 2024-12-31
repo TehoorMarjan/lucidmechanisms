@@ -7,7 +7,7 @@ draft = false
 image = 'images/posts/2016-01-23-matplotlib-draw-between-subplots/header.webp'
 keywords = ['matplotlib', 'subplots', 'figure', 'python', 'pandas']
 slug = 'matplotlib-draw-between-subplots'
-tags = ['featured', 'python', 'matplotlib', 'pandas', 'code']
+tags = ['python', 'matplotlib', 'pandas', 'code']
 title = 'Matplotlib: draw between subplots'
 +++
 
