@@ -2,7 +2,7 @@
 date = '2024-12-22T02:03:27+01:00'
 description = 'Qui suis-je ?'
 draft = false
-keywords = ["systèmes embarqués", "temps réel", "informatique", "design", "créations"]
+keywords = ['systèmes embarqués', 'temps réel', 'informatique', 'design', 'créations']
 slug = 'moi'
 title = 'Qui suis-je ?'
 +++

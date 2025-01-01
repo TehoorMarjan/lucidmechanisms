@@ -5,9 +5,9 @@ date = '2016-08-19T08:30:05+01:00'
 description = "Intégrer correctement des fonctions avec des codes d'erreur et strerror en utilisant le wrapper SWIG"
 draft = false
 image = 'images/posts/2016-08-19-swig-and-functions-with-error-codes-and-strerror/header.webp'
-keywords = ["swig", "strerror", "wrapper", "python"]
+keywords = ['swig', 'strerror', 'wrapper', 'python']
 slug = 'swig-et-les-fonctions-avec-codes-d-erreur-et-strerror'
-tags = ['python', 'SWIG', 'c', 'code']
+tags = ['python', 'swig', 'c', 'code']
 title = "SWIG et les fonctions avec codes d'erreur et strerror"
 +++
 
