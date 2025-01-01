@@ -24,7 +24,7 @@
         {{ range $i,$p:= $categories }}
           {{ $catPage := ($.Site.GetPage "categories").GetPage $p }}
           <a href="{{ $catPage.RelPermalink }}" class="ms-1"
-            >{{ $catPage.Title | humanize }}{{ if ne $i (sub (len $categories) 1) }}
+            >{{ $catPage.Title }}{{ if ne $i (sub (len $categories) 1) }}
               {{ "," }}
             {{ end }}
           </a>
