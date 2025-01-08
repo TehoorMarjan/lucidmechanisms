@@ -8,10 +8,10 @@
     "dev": "hugo server --buildDrafts --buildFuture",
     "build": "hugo --gc --minify --templateMetrics --templateMetricsHints --forceSyncStatic",
     "preview": "hugo server --disableFastRender --navigateToChanged --templateMetrics --templateMetricsHints --watch --forceSyncStatic -e production --minify",
-    "update-modules": "node ./scripts/clearModules.js && hugo mod clean --all && hugo mod get -u ./... && hugo mod tidy",
+    "update-modules": "node ./scripts/clearModules.mjs && hugo mod clean --all && hugo mod get -u ./... && hugo mod tidy",
     "format": "prettier -w .",
     "format:check": "prettier -c .",
-    "write": "node ./scripts/newContent.js"
+    "write": "node ./scripts/newContent.mjs"
   },
   "devDependencies": {
     "@tailwindcss/forms": "^0.5.9",
