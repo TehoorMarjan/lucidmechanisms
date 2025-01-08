@@ -81,3 +81,47 @@ enable = false
 # mailchimp subsciption
 mailchimp_form_action = "https://gmail.us4.list-manage.com/subscribe/post?u=463ee871f45d2d93748e77cad&amp;id=a0a2c6d074" # replace this url with yours
 mailchimp_form_name = "b_463ee871f45d2d93748e77cad_a0a2c6d074"
+
+############################# Plugins ##############################
+# CSS Plugins
+[[plugins.css]]
+link = "plugins/swiper/swiper-bundle.css"
+lazy = true
+[[plugins.css]]
+link = "plugins/glightbox/glightbox.css"
+lazy = true
+[[plugins.css]]
+link = "plugins/font-awesome/v6/brands.css"
+lazy = true
+[[plugins.css]]
+link = "plugins/font-awesome/v6/solid.css"
+lazy = true
+[[plugins.css]]
+link = "plugins/font-awesome/v6/icons.css"
+lazy = true
+
+# JS Plugins
+[[plugins.js]]
+link = "js/search.js"
+lazy = false
+[[plugins.js]]
+link = "plugins/swiper/swiper-bundle.js"
+lazy = false
+[[plugins.js]]
+link = "plugins/glightbox/glightbox.js"
+lazy = true
+[[plugins.js]]
+link = "js/gallery-slider.js"
+lazy = true
+[[plugins.js]]
+link = "js/accordion.js"
+lazy = true
+[[plugins.js]]
+link = "js/tab.js"
+lazy = true
+[[plugins.js]]
+link = "js/modal.js"
+lazy = true
+[[plugins.js]]
+link = "plugins/youtube-lite.js"
+lazy = true
