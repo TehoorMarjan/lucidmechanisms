@@ -12,6 +12,7 @@ defaultContentLanguage = 'en'
 # defaultContentLanguageInSubdir need to be true if you want to use the language code as a subdirectory and language specific 404 page
 defaultContentLanguageInSubdir = true
 
+
 ########################### Services #############################
 #[services]
 #[services.googleAnalytics]
@@ -37,6 +38,11 @@ target = "assets"
 [[module.mounts]]
 source = "hugo_stats.json"
 target = "assets/watching/hugo_stats.json"
+
+[[module.mounts]]
+source = "_redirects"
+target = "static/_redirects"
+
 
 ############################# Build ##############################
 [build]
@@ -68,12 +74,14 @@ target = '$1'
 [outputs]
 home = ["HTML", "RSS", "WebAppManifest", "SearchIndex"]
 
+
 ############################# Imaging ############################
 [imaging]
 # See https://github.com/disintegration/imaging
 # Default JPEG or WebP quality setting. Default is 75.
 quality = 80
 resampleFilter = "Lanczos"
+
 
 ############################ Caches ##############################
 [caches]
