@@ -21,7 +21,7 @@ input#nav-toggle:checked ~ #nav-menu {
 }
 
 .navbar-brand {
-  @apply text-xl font-semibold text-dark dark:text-darkmode-dark;
+  @apply pb-4 text-xl font-semibold text-dark dark:text-darkmode-dark sm:pb-0;
   image {
     @apply max-h-full max-w-full;
   }
