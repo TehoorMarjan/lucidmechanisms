@@ -6,12 +6,12 @@ logo = "images/logo.webp"
 logo_darkmode = "images/logo-darkmode.webp"
 # use `px` or `x` with logo_width, example: "100px".
 # Note: logo_width is not work with .svg file
-logo_width = "96px"
-logo_height = "96px"
+logo_width = "288px"
+logo_height = "72px"
 # if logo_webp set false, will not generate WEBP version of logo | default is true
 logo_webp = true
 # logo text will only show when logo is missing.
-logo_text = "Lucid"
+logo_text = "Lucid Mechanisms"
 # navbar fixed to top
 navbar_fixed = true
 # theme-mode
