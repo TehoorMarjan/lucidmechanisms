@@ -3,6 +3,7 @@ module lucidmechanisms.netlify.app
 go 1.23
 
 require (
+	github.com/devicons/devicon v2.16.0+incompatible // indirect
 	github.com/gethugothemes/hugo-modules/accordion v0.0.0-20241203025515-30ad48e108af // indirect
 	github.com/gethugothemes/hugo-modules/adsense v0.0.0-20241203025515-30ad48e108af // indirect
 	github.com/gethugothemes/hugo-modules/components/custom-script v0.0.0-20241203025515-30ad48e108af // indirect
@@ -23,5 +24,7 @@ require (
 	github.com/gethugothemes/hugo-modules/tab v0.0.0-20241203025515-30ad48e108af // indirect
 	github.com/gethugothemes/hugo-modules/table-of-contents v0.0.0-20241203025515-30ad48e108af // indirect
 	github.com/gethugothemes/hugo-modules/videos v0.0.0-20241203025515-30ad48e108af // indirect
+	github.com/hugomods/icons v0.6.6 // indirect
+	github.com/hugomods/icons/vendors/devicons v0.0.2 // indirect
 	github.com/hugomods/mermaid v0.1.4 // indirect
 )

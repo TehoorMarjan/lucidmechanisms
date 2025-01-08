@@ -20,18 +20,18 @@ Informatique | Design | Créations
 
 🎂 38 ans | 🚗 Permis B
 
-<div class="flex flex-row gap-8 justify-center">
+<div class="flex flex-row flex-wrap justify-center gap-8">
 
-<p class="font-bold m-1 block rounded bg-theme-light px-3 py-1 hover:bg-primary hover:text-white dark:bg-darkmode-theme-light dark:hover:bg-darkmode-primary dark:hover:text-dark">
+<p class="m-1 block rounded bg-theme-light px-3 py-1 font-bold hover:bg-primary hover:text-white dark:bg-darkmode-theme-light dark:hover:bg-darkmode-primary dark:hover:text-dark">
 <i class="fa-solid fa-language"></i> Trilingue
 </p>
-<p class="font-bold m-1 block rounded bg-theme-light px-3 py-1 hover:bg-primary hover:text-white dark:bg-darkmode-theme-light dark:hover:bg-darkmode-primary dark:hover:text-dark">
+<p class="m-1 block rounded bg-theme-light px-3 py-1 font-bold hover:bg-primary hover:text-white dark:bg-darkmode-theme-light dark:hover:bg-darkmode-primary dark:hover:text-dark">
 <i class="fa-solid fa-arrow-down-up-across-line"></i> Transverse
 </p>
-<p class="font-bold m-1 block rounded bg-theme-light px-3 py-1 hover:bg-primary hover:text-white dark:bg-darkmode-theme-light dark:hover:bg-darkmode-primary dark:hover:text-dark">
+<p class="m-1 block rounded bg-theme-light px-3 py-1 font-bold hover:bg-primary hover:text-white dark:bg-darkmode-theme-light dark:hover:bg-darkmode-primary dark:hover:text-dark">
 <i class="fa-solid fa-palette"></i> Créatif
 </p>
-<p class="font-bold m-1 block rounded bg-theme-light px-3 py-1 hover:bg-primary hover:text-white dark:bg-darkmode-theme-light dark:hover:bg-darkmode-primary dark:hover:text-dark">
+<p class="m-1 block rounded bg-theme-light px-3 py-1 font-bold hover:bg-primary hover:text-white dark:bg-darkmode-theme-light dark:hover:bg-darkmode-primary dark:hover:text-dark">
 <i class="fa-solid fa-cloud-sun-rain"></i> Résilient
 </p>
 
@@ -41,7 +41,7 @@ Informatique | Design | Créations
 
 ---
 
-<div class="grid grid-cols-1 xl:grid-cols-3 gap-8">
+<div class="grid grid-cols-1 gap-8 xl:grid-cols-3">
 
 <div class="col-span-1 xl:col-span-2">
 
@@ -105,7 +105,7 @@ Informatique | Design | Créations
 
 ### Compétences Techniques
 
-<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-1 md:gap-6">
+<div class="grid grid-cols-1 md:grid-cols-2 md:gap-6 xl:grid-cols-1">
 
 <div class="col-span-1">
 
@@ -120,29 +120,29 @@ Informatique | Design | Créations
 
 <div class="col-span-1">
 
-| **Logiciels/Frameworks** |              |
-| ------------------------ | ------------ |
-| 🐧 Linux                 | 🟢🟢🟢🟢🟢🟢 |
-| ✏️ LibreOffice           | 🟢🟢🟢🟢🟢⚪ |
-| 🪟 Office 360            | 🟢🟢🟢⚪⚪⚪ |
-| 🚪 Doors                 | 🟢🟢🟢🟢⚪⚪ |
-| 🚘 aSpice/AUTOSAR        | 🟢🟢🟢🟢🟢⚪ |
-| 🚩 Git / Jira            | 🟢🟢🟢🟢🟢⚪ |
+| **Logiciels/Frameworks**                                                                      |              |
+| --------------------------------------------------------------------------------------------- | ------------ |
+| {{< icons/icon vendor=dev name="linux/linux-original" className="hi-svg-2" >}} Linux          | 🟢🟢🟢🟢🟢🟢 |
+| {{< icons/icon vendor=custom name="libreoffice"       className="hi-svg-2" >}} LibreOffice    | 🟢🟢🟢🟢🟢⚪ |
+| {{< icons/icon vendor=custom name="msoffice365"       className="hi-svg-2" >}} Office 360     | 🟢🟢🟢⚪⚪⚪ |
+| {{< icons/icon vendor=custom name="doors"             className="hi-svg-2" >}} Doors          | 🟢🟢🟢🟢⚪⚪ |
+| {{< icons/icon vendor=custom name="autosar"           className="hi-svg-2" >}} aSpice/AUTOSAR | 🟢🟢🟢🟢🟢⚪ |
+| {{< icons/icon vendor=dev name="git/git-original"     className="hi-svg-2" >}} Git / Jira     | 🟢🟢🟢🟢🟢⚪ |
 
 </div>
 
 <div class="col-span-1">
 
-| **Programmation** |              |
-| ----------------- | ------------ |
-| 🐍 Python         | 🟢🟢🟢🟢🟢🟢 |
-| 🚗 C/MISRA        | 🟢🟢🟢🟢🟢🟢 |
-| 💼 C++            | 🟢🟢🟢⚪⚪⚪ |
-| ☕ Java           | 🟢🟢🟢⚪⚪⚪ |
-| 🌍 HTML5/CSS3     | 🟢🟢🟢🟢🟢⚪ |
-| 🟨 JavaScript     | 🟢🟢🟢⚪⚪⚪ |
-| 🐘 PHP            | 🟢🟢🟢🟢⚪⚪ |
-| 🚢 Rust           | 🟢🟢⚪⚪⚪⚪ |
+| **Programmation**                                                                                   |              |
+| --------------------------------------------------------------------------------------------------- | ------------ |
+| {{< icons/icon vendor=dev name="python/python-original"         className="hi-svg-2" >}} Python     | 🟢🟢🟢🟢🟢🟢 |
+| {{< icons/icon vendor=dev name="c/c-original"                   className="hi-svg-2" >}} C/MISRA    | 🟢🟢🟢🟢🟢🟢 |
+| {{< icons/icon vendor=dev name="cplusplus/cplusplus-original"   className="hi-svg-2" >}} C++        | 🟢🟢🟢⚪⚪⚪ |
+| {{< icons/icon vendor=dev name="java/java-original"             className="hi-svg-2" >}} Java       | 🟢🟢🟢⚪⚪⚪ |
+| {{< icons/icon vendor=dev name="html5/html5-original"           className="hi-svg-2" >}} HTML5/CSS3 | 🟢🟢🟢🟢🟢⚪ |
+| {{< icons/icon vendor=dev name="javascript/javascript-original" className="hi-svg-2" >}} JavaScript | 🟢🟢🟢⚪⚪⚪ |
+| {{< icons/icon vendor=dev name="php/php-original"               className="hi-svg-2" >}} PHP        | 🟢🟢🟢🟢⚪⚪ |
+| {{< icons/icon vendor=dev name="rust/rust-original"             className="hi-svg-2" >}} Rust       | 🟢🟢⚪⚪⚪⚪ |
 
 </div>
 
