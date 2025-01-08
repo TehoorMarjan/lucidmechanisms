@@ -1,7 +1,7 @@
-const fs = require("fs");
-const slugify = require("slugify");
-const path = require("path");
-const exec = require("child_process").exec;
+import { mkdirSync, readFile, writeFile } from "fs";
+import slugify from "slugify";
+import { join } from "path";
+import { exec } from "child_process";
 
 // Get the title from the command line arguments
 const title = process.argv[2];
@@ -14,27 +14,19 @@ if (!title) {
 const date = new Date().toISOString().split("T")[0];
 
 // Create the folder name by combining the date and slugified title
-const folderName = `${date}-${slugify(title, { lower: true })}`;
+const slugName = `${slugify(title, { lower: true })}`;
+const folderName = `${date}-${slugName}`;
 
 // Define the paths
-const assetsPath = path.join(
-  process.cwd(),
-  `./assets/images/posts/${folderName}`,
-);
-const enContentPath = path.join(
-  process.cwd(),
-  `./content/en/posts/${folderName}`,
-);
-const frContentPath = path.join(
-  process.cwd(),
-  `./content/fr/posts/${folderName}`,
-);
-const indexPath = path.join(enContentPath, "index.md");
+const assetsPath = join(process.cwd(), `./assets/images/posts/${folderName}`);
+const enContentPath = join(process.cwd(), `./content/en/posts/${folderName}`);
+const frContentPath = join(process.cwd(), `./content/fr/posts/${folderName}`);
+const indexPath = join(enContentPath, "index.md");
 
 // Create the necessary folders
-fs.mkdirSync(assetsPath, { recursive: true });
-fs.mkdirSync(enContentPath, { recursive: true });
-fs.mkdirSync(frContentPath, { recursive: true });
+mkdirSync(assetsPath, { recursive: true });
+mkdirSync(enContentPath, { recursive: true });
+mkdirSync(frContentPath, { recursive: true });
 
 // Call hugo to create the new content
 exec(
@@ -53,15 +45,17 @@ exec(
     console.log(stdout);
 
     // Replace the title in the index.md file
-    fs.readFile(indexPath, "utf8", (err, data) => {
+    readFile(indexPath, "utf8", (err, data) => {
       if (err) {
         console.error(`Error reading index.md: ${err.message}`);
         return;
       }
 
-      const result = data.replace(/title = '.*'/, `title = '${title}'`);
+      const result = data
+        .replace(/title = '.*'/, `title = '${title}'`)
+        .replace(/slug = '.*'/, `slug = '${slugName}'`);
 
-      fs.writeFile(indexPath, result, "utf8", (err) => {
+      writeFile(indexPath, result, "utf8", (err) => {
         if (err) {
           console.error(`Error writing index.md: ${err.message}`);
           return;
