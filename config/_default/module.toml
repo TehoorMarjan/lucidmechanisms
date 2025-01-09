@@ -17,8 +17,8 @@ path = "github.com/gethugothemes/hugo-modules/videos"
 [[imports]]
 path = "github.com/gethugothemes/hugo-modules/icons/font-awesome"
 
-# [[imports]]
-# path = "github.com/gethugothemes/hugo-modules/icons/themify-icons"
+[[imports]]
+path = "github.com/hugomods/icons/vendors/devicons"
 
 [[imports]]
 path = "github.com/gethugothemes/hugo-modules/gzip-caching"

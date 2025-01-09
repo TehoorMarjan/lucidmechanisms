@@ -1,3 +1,5 @@
+github.com/devicons/devicon v2.16.0+incompatible h1:8Fp1OFUZSUwfd7GKWIjWO6bMfjcJ5m7TRr8g+WSg/VE=
+github.com/devicons/devicon v2.16.0+incompatible/go.mod h1:5xWaezLtUi8HXB3mL9CGW0kbX2pJR0/Ser5Y1zJpKpY=
 github.com/gethugothemes/hugo-modules/accordion v0.0.0-20241203025515-30ad48e108af h1:BKOdMWtcCh5Y2JHFSP+dro2UF+XVF0nabPs6BbW2PVA=
 github.com/gethugothemes/hugo-modules/accordion v0.0.0-20241203025515-30ad48e108af/go.mod h1:D4DpauKPDcUHI9CVKYmJeO6bkSJIhUN864TyXZ2o0VI=
 github.com/gethugothemes/hugo-modules/adsense v0.0.0-20241203025515-30ad48e108af h1:uOQnQxbGsdk+9qv82ywBOjFM7tNqpRJ5q/zwPoKa47g=
@@ -38,5 +40,9 @@ github.com/gethugothemes/hugo-modules/table-of-contents v0.0.0-20241203025515-30
 github.com/gethugothemes/hugo-modules/table-of-contents v0.0.0-20241203025515-30ad48e108af/go.mod h1:bEDw4veccQQQYEdVrfu13ATRUWfW8ptDIjJZuhYh4Tw=
 github.com/gethugothemes/hugo-modules/videos v0.0.0-20241203025515-30ad48e108af h1:YRzew4SPe/8wf5rNWGf1pp2Oh2x2l0aoK1h8Lqg0W9s=
 github.com/gethugothemes/hugo-modules/videos v0.0.0-20241203025515-30ad48e108af/go.mod h1:P722lLWdnNhdZVq6gvMrOLqECUwrAYQWaOWlChta5H0=
+github.com/hugomods/icons v0.6.6 h1:gGlafcBDRP7sSID+tgLcWdog+s/QBj8DIfU+h9tZj1U=
+github.com/hugomods/icons v0.6.6/go.mod h1:cIkSvK6W0q6N4U6n9KGz+QfRWQXAW0INd+1P31gPNGg=
+github.com/hugomods/icons/vendors/devicons v0.0.2 h1:iHjrQcRgtlm+G1r98ibw32wcZ25NBdoSb94Q6afv1ac=
+github.com/hugomods/icons/vendors/devicons v0.0.2/go.mod h1:WXbkgtMxTFrGEetPldyvUW9RqhSLyDR0uf1IJg9Cgic=
 github.com/hugomods/mermaid v0.1.4 h1:/u0FZRSBMpqTbDh4XPBL7c6p0DUjvIkoo9cC89GASSI=
 github.com/hugomods/mermaid v0.1.4/go.mod h1:GOID2Ko1vdrX03ZMaFNQL/vdTU1tZmGcVjOgBN8O42Y=
