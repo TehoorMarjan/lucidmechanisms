@@ -14,7 +14,7 @@ if (!title) {
 const date = new Date().toISOString().split("T")[0];
 
 // Create the folder name by combining the date and slugified title
-const slugName = `${slugify(title, { lower: true })}`;
+const slugName = `${slugify(title, { lower: true, strict: true })}`;
 const folderName = `${date}-${slugName}`;
 
 // Define the paths
