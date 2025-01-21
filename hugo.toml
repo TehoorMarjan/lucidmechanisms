@@ -101,6 +101,11 @@ unsafe = true
 [markup.goldmark.parser.attribute]
 block = true  # Note: prettier might not be happy with this
 title = true
+[markup.goldmark.extensions.passthrough]
+enable = true
+[markup.goldmark.extensions.passthrough.delimiters]
+block = [['\[', '\]'], ['$$', '$$']]
+inline = [['\(', '\)'], ['$', '$']]
 
 [markup.highlight]
 #style = 'monokai' # see https://xyproto.github.io/splash/docs/all.html
