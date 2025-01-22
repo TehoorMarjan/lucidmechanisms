@@ -1,13 +1,13 @@
 +++
 author = 'Tehoor Marjan'
-categories = ['linux', 'manjaro']
+categories = ['linux']
 date = '2024-12-15T23:41:59+01:00'
 description = ' Manjaro avec Btrfs et le chiffrement du système entier, Secure Boot et systemd-boot'
 draft = false
 image = '/images/posts/2024-12-15-manjaro-with-system-wide-encryption-and-btrfs/header.webp'
 keywords = ['Manjaro', 'Chiffrement Système', 'Btrfs', 'Secure Boot', 'Systemd']
 slug = 'manjaro-avec-btrfs-et-le-chiffrement-du-systeme-entier'
-tags = ['linux', 'manjaro', 'encryption', 'btrfs']
+tags = ['btrfs', 'encryption', 'linux', 'manjaro']
 title = 'Installer Manjaro avec Btrfs et le chiffrement du système entier'
 +++
 

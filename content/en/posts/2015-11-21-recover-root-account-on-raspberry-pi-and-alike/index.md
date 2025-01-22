@@ -1,13 +1,13 @@
 +++
 author = 'Cilyan Olowen'
-categories = ['linux', 'raspberrypi']
+categories = ['linux']
 date = '2015-11-21T08:00:30+01:00'
 description = 'An article on how to reset root password on a SD Card'
 draft = false
 image = 'images/posts/2015-11-21-recover-root-account-on-raspberry-pi-and-alike/header.webp'
 keywords = ['root', 'password', 'recover', 'raspberrypi']
 slug = 'recover-root-account-on-raspberry-pi-and-alike'
-tags = ['linux', 'raspberrypi', 'encryption']
+tags = ['encryption', 'linux', 'raspberrypi']
 title = 'Recover Root Account on Raspberry Pi and Alike'
 +++
 

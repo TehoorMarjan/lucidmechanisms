@@ -1,13 +1,13 @@
 +++
 author = 'Cilyan Olowen'
-categories = ['linux', 'raspberrypi']
+categories = ['linux']
 date = '2015-11-21T08:00:30+01:00'
 description = 'Un article sur comment réinitialiser le mot de passe root sur une carte SD'
 draft = false
 image = 'images/posts/2015-11-21-recover-root-account-on-raspberry-pi-and-alike/header.webp'
 keywords = ['root', 'password', 'recover', 'raspberrypi']
 slug = 'recuperer-le-compte-root-sur-raspberry-pi-et-similaires'
-tags = ['linux', 'raspberrypi', 'encryption']
+tags = ['encryption', 'linux', 'raspberrypi']
 title = 'Récupérer le compte Root sur RaspberryPi et similaires'
 +++
 
