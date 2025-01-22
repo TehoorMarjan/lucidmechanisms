@@ -1,13 +1,13 @@
 +++
 author = 'Cilyan Olowen'
-categories = ['python', 'code']
+categories = ['code']
 date = '2016-01-23T12:00:53+01:00'
 description = 'Draw between different subplots on a single Matplotlib figure'
 draft = false
 image = 'images/posts/2016-01-23-matplotlib-draw-between-subplots/header.webp'
 keywords = ['matplotlib', 'subplots', 'figure', 'python', 'pandas']
 slug = 'matplotlib-draw-between-subplots'
-tags = ['python', 'matplotlib', 'pandas', 'code']
+tags = ['code', 'matplotlib', 'pandas', 'python']
 title = 'Matplotlib: draw between subplots'
 +++
 

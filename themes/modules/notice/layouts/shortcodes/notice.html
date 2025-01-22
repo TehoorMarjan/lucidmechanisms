@@ -12,15 +12,15 @@
   {{ $type_class = "abstract" }}
 {{ else if eq "info" $type }}
   {{ $type_class = "info" }}
-{{ else if eq "todo" $type }}
+{{ else if in (slice "tip" "todo") $type }}
   {{ $type_class = "todo" }}
-{{ else if in (slice "tip" "hint" "important") $type }}
+{{ else if in (slice "hint") $type }}
   {{ $type_class = "tip" }}
 {{ else if in (slice "success" "check" "done") $type }}
   {{ $type_class = "success" }}
 {{ else if in (slice "question" "help" "faq") $type }}
   {{ $type_class = "question" }}
-{{ else if in (slice "warning" "caution" "attention") $type }}
+{{ else if in (slice "warning" "caution" "attention" "important") $type }}
   {{ $type_class = "warning" }}
 {{ else if in (slice "failure" "fail" "missing") $type }}
   {{ $type_class = "failure" }}

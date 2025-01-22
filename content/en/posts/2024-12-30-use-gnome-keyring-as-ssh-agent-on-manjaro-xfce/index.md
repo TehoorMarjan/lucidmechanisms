@@ -1,13 +1,13 @@
 +++
 author = 'Tehoor Marjan'
-categories = ['linux', 'manjaro']
+categories = ['linux']
 date = '2024-12-30T22:00:01+01:00'
 description = 'Use GNOME Keyring as ssh-agent on Manjaro XFCE - The easy way!'
 draft = false
 image = 'images/posts/2024-12-30-use-gnome-keyring-as-ssh-agent-on-manjaro-xfce/header.webp'
 keywords = ['Manjaro', 'XFCE', 'GNOME Keyring', 'ssh-agent']
 slug = 'use-gnome-keyring-as-ssh-agent-on-manjaro-xfce'
-tags = ['linux', 'manjaro', 'xfce', 'ssh-agent']
+tags = ['linux', 'manjaro', 'ssh-agent', 'xfce']
 title = 'Use GNOME Keyring as SSH Agent on Manjaro XFCE'
 +++
 

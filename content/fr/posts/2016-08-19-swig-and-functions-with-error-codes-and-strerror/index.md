@@ -1,13 +1,13 @@
 +++
 author = 'Cilyan Olowen'
-categories = ['c', 'code', 'python']
+categories = ['code']
 date = '2016-08-19T08:30:05+01:00'
 description = "Intégrer correctement des fonctions avec des codes d'erreur et strerror en utilisant le wrapper SWIG"
 draft = false
 image = 'images/posts/2016-08-19-swig-and-functions-with-error-codes-and-strerror/header.webp'
 keywords = ['swig', 'strerror', 'wrapper', 'python']
 slug = 'swig-et-les-fonctions-avec-codes-d-erreur-et-strerror'
-tags = ['python', 'swig', 'c', 'code']
+tags = ['c', 'code', 'python', 'swig']
 title = "SWIG et les fonctions avec codes d'erreur et strerror"
 +++
 

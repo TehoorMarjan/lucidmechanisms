@@ -44,3 +44,9 @@
 
 <!-- Mermaid -->
 {{ partial "mermaid/assets/js" . }}
+
+
+<!-- MathJax -->
+{{ if .Param "math" }}
+  {{ partialCached "math.html" . }}
+{{ end }}
