@@ -6,6 +6,7 @@ description = 'An article on how to reset root password on a SD Card'
 draft = false
 image = 'images/posts/2015-11-21-recover-root-account-on-raspberry-pi-and-alike/header.webp'
 keywords = ['root', 'password', 'recover', 'raspberrypi']
+lastmod = '2025-02-24T22:30:02+01:00'
 slug = 'recover-root-account-on-raspberry-pi-and-alike'
 tags = ['encryption', 'linux', 'raspberrypi']
 title = 'Recover Root Account on Raspberry Pi and Alike'
@@ -69,15 +70,18 @@ passwd -R /tmp/Rasp root
 but it miserably failed in my case. Nevermind, let's do exactly the same, but
 manually. With a plus point: we will learn something in the process.
 
-In the `/etc/shadow`, the passwords are hashed and salted. The method, the salt
-and the resulting hash are all stored in the form `$method_id$salt$hash`. We
-can't decipher back the password, but now that we have access to the file, we
-can change this hash to be the one of a new password. Something that we will
-remember this time, if possible… After some research of a nice little tool to do
-the job, I found out that the best was a simple python script. Just start a
-python console and type
+In the `/etc/shadow`, the passwords are hashed and salted (yummy...). The
+method, the salt and the resulting hash are all stored in the form
+`$method_id$salt$hash`. We can't decipher back the password, but now that we
+have access to the file, we can change this hash to be the one of a new
+password. Something that we will remember this time, if possible…
 
-```python
+{{< accordion title="Outdated since Python 3.13" class="inactive">}}
+
+~~After some research of a nice little tool to do the job, I found out that the
+best was a simple python script. Just start a python console and type~~
+
+```py3
 $ python
 Python 3.5.0 (default, Sep 20 2015, 11:28:25)
 [GCC 5.2.0] on linux
@@ -92,15 +96,28 @@ Type "help", "copyright", "credits" or "license" for more information.
 Above, `'cilyan.org'` is our new password, and the resulting string is exactly
 what we have to place in the shadow file in the password field (just remember
 not to include the quotes). I used the SHA512 algorithm, which should also be
-standard to your system. You can check your standard method for your system as
-follows:
+standard to your system.
+
+{{< /accordion >}}
+
+_Updated on 24/02/2025_
+
+A quick and easy solution to get our salted hashed password, is using `openssl`:
+
+```bash
+openssl passwd -6
+```
+
+where `-6` is for SHA512 algorithm. You can check the standard method for your
+system as follows:
 
 ```bash
 grep ENCRYPT_METHOD /tmp/Rasp/etc/login.defs
 ```
 
-Anyway, as the method used is stored in the file along the salt and hash, even
-if it isn't the default one, you should be able to log in.
+But anyway, as the method used is stored in the string along the salt and hash,
+even if it isn't the default one, you should be able to log in. Also, `openssl`
+cannot generate a _yescrypt_ hash (yet?).
 
 Replace the password in the shadow file, on the line for the root account, which
 should now look something like this

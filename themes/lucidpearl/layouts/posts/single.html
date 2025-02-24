@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row justify-center">
         <article class="lg:col-10">
-          <div class="relative mb-10 min-h-64 sm:min-h-48">
+          <div class="relative mb-5 min-h-64 sm:min-h-48">
             {{ $image:= .Params.image }}
             {{ if $image }}
               {{ partial "image" (dict "Src" $image "Context" .Page "Alt" .Title "Class" "w-full rounded") }}
@@ -41,7 +41,15 @@
               </ul>
             </div>
           </div>
-          <div class="content mb-10">
+          <div class="content mb-10 mt-5">
+            {{ if ne .Lastmod .PublishDate }}
+              <div class="mb-5">
+                <p class="text-sm italic text-gray-600 dark:text-gray-400">
+                  {{ T "last_updated" }}
+                  {{ time.Format ":date_long" .Lastmod }}
+                </p>
+              </div>
+            {{ end }}
             {{ partial "toc.html" (dict "Class" "blog" "Collapsed" true "TableOfContents" .TableOfContents ) }}
             {{ .Content }}
           </div>
