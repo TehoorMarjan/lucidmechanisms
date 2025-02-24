@@ -6,6 +6,7 @@ description = 'Un article sur comment réinitialiser le mot de passe root sur un
 draft = false
 image = 'images/posts/2015-11-21-recover-root-account-on-raspberry-pi-and-alike/header.webp'
 keywords = ['root', 'password', 'recover', 'raspberrypi']
+lastmod = '2025-02-24T22:30:02+01:00'
 slug = 'recuperer-le-compte-root-sur-raspberry-pi-et-similaires'
 tags = ['encryption', 'linux', 'raspberrypi']
 title = 'Récupérer le compte Root sur RaspberryPi et similaires'
@@ -81,9 +82,13 @@ La méthode, le sel et le hash résultants sont tous stockés sous la forme
 `$method_id$sel$hash`. Nous n'allons pas déchiffrer le mot de passe, mais
 maintenant que nous avons accès au fichier, on peut changer ce hash pour être
 celui d'un nouveau mot de passe. Quelque chose qu'on ne va pas oublier ce
-coup-ci, si possible… Après quelques recherches d'un petit outil pratique pour
-faire le travail, j'ai découvert que le meilleur était un simple script Python.
-Il suffit de démarrer une console Python et de taper :
+coup-ci, si possible…
+
+{{< accordion title="Obsolète depuis Python 3.13" class="inactive">}}
+
+~~Après quelques recherches d'un petit outil pratique pour faire le travail,
+j'ai découvert que le meilleur était un simple script Python. Il suffit de
+démarrer une console Python et de taper :~~
 
 ```python
 $ python
@@ -100,16 +105,30 @@ Ci-dessus, `'cilyan.org'` est notre nouveau mot de passe, et la chaîne
 résultante correspond exactement à ce que nous devons placer dans le fichier
 shadow dans le champ mot de passe (n'oubliez pas quand même d'enlever les
 guillemets). J'ai utilisé l'algorithme SHA512, qui devrait également être
-standard sur votre système. Vous pouvez vérifier la méthode standard de votre
-système comme suit :
+standard sur votre système.
+
+{{< /accordion >}}
+
+_Mise à jour le 24/02/2025_
+
+Une méthode simple et rapide pour obtenir notre mot de passe haché et salé,
+c'est d'utiliser `openssl`
+
+```bash
+openssl passwd -6
+```
+
+où `-6` précise d'utiliser l'algorithme SHA512. Vous pouvez vérifier la méthode
+standard de votre système comme suit :
 
 ```bash
 grep ENCRYPT_METHOD /tmp/Rasp/etc/login.defs
 ```
 
-De toute façon, comme la méthode utilisée est stockée dans le fichier avec le
-sel et le hash, même si ce n'est pas la méthode par défaut, vous devriez pouvoir
-vous connecter.
+Mais de toutes façons, la méthode utilisée est stockée dans la chaîne avec le
+sel et le hash, donc même si ce n'est pas la méthode par défaut, vous devriez
+pouvoir vous connecter. De plus, `openssl` ne sait pas (encore?) générer un hash
+_yescrypt_.
 
 Remplacez le mot de passe dans le fichier `shadow`, sur la ligne du compte root,
 qui devrait maintenant ressembler à ceci :
