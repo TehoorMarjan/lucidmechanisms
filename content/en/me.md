@@ -138,11 +138,11 @@ Computer Science | Design | Creations
 | {{< icons/icon vendor=dev name="python/python-original"         className="hi-svg-2" >}} Python     | 🟢🟢🟢🟢🟢🟢 |
 | {{< icons/icon vendor=dev name="c/c-original"                   className="hi-svg-2" >}} C/MISRA    | 🟢🟢🟢🟢🟢🟢 |
 | {{< icons/icon vendor=dev name="cplusplus/cplusplus-original"   className="hi-svg-2" >}} C++        | 🟢🟢🟢⚪⚪⚪ |
-| {{< icons/icon vendor=dev name="java/java-original"             className="hi-svg-2" >}} Java       | 🟢🟢🟢⚪⚪⚪ |
+| {{< icons/icon vendor=dev name="php/php-original"               className="hi-svg-2" >}} PHP        | 🟢🟢🟢🟢⚪⚪ |
 | {{< icons/icon vendor=dev name="html5/html5-original"           className="hi-svg-2" >}} HTML5/CSS3 | 🟢🟢🟢🟢🟢⚪ |
 | {{< icons/icon vendor=dev name="javascript/javascript-original" className="hi-svg-2" >}} JavaScript | 🟢🟢🟢⚪⚪⚪ |
-| {{< icons/icon vendor=dev name="php/php-original"               className="hi-svg-2" >}} PHP        | 🟢🟢🟢🟢⚪⚪ |
-| {{< icons/icon vendor=dev name="rust/rust-original"             className="hi-svg-2" >}} Rust       | 🟢🟢⚪⚪⚪⚪ |
+| {{< icons/icon vendor=dev name="java/java-original"             className="hi-svg-2" >}} Java       | 🟢🟢🟢⚪⚪⚪ |
+| {{< icons/icon vendor=dev name="rust/rust-original"             className="hi-svg-2" >}} Rust       | 🟢🟢🟢⚪⚪⚪ |
 
 </div>
 
