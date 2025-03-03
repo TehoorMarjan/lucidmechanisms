@@ -142,7 +142,7 @@ Informatique | Design | Créations
 | {{< icons/icon vendor=dev name="html5/html5-original"           className="hi-svg-2" >}} HTML5/CSS3 | 🟢🟢🟢🟢🟢⚪ |
 | {{< icons/icon vendor=dev name="javascript/javascript-original" className="hi-svg-2" >}} JavaScript | 🟢🟢🟢⚪⚪⚪ |
 | {{< icons/icon vendor=dev name="java/java-original"             className="hi-svg-2" >}} Java       | 🟢🟢🟢⚪⚪⚪ |
-| {{< icons/icon vendor=dev name="rust/rust-original"             className="hi-svg-2" >}} Rust       | 🟢🟢🟢⚪⚪⚪ |
+| {{< icons/icon vendor=custom name="rustacean"                   className="hi-svg-2" >}} Rust       | 🟢🟢🟢⚪⚪⚪ |
 
 </div>
 
