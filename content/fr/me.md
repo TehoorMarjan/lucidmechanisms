@@ -1,24 +1,22 @@
 +++
-date = '2024-12-22T02:03:27+01:00'
+date = '2026-06-18T10:57:17+02:00'
 description = 'Qui suis-je ?'
 draft = false
-keywords = ['systèmes embarqués', 'temps réel', 'informatique', 'design', 'créations']
+keywords = ['systèmes embarqués', 'temps réel', 'informatique', 'électronique', 'design', 'créations']
 slug = 'moi'
 title = 'Qui suis-je ?'
 +++
 
-### 🚧 En construction 🚧 {.text-center .my-8}
-
 <div class="text-center">
 
-## Ingénieur Responsable Technique
+## Ingénieur Chef de Projet
 
 <p class="h4 font-bold">
 Systèmes Embarqués Temps Réel<br/>
-Informatique | Design | Créations
+Informatique | Électronique | Design | Créations
 </p>
 
-🎂 38 ans | 🚗 Permis B
+🎂 40 ans | 🚗 Permis B
 
 <div class="flex flex-row flex-wrap justify-center gap-8">
 
@@ -26,10 +24,10 @@ Informatique | Design | Créations
 <i class="fa-solid fa-language"></i> Trilingue
 </p>
 <p class="m-1 block rounded bg-theme-light px-3 py-1 font-bold hover:bg-primary hover:text-white dark:bg-darkmode-theme-light dark:hover:bg-darkmode-primary dark:hover:text-dark">
-<i class="fa-solid fa-arrow-down-up-across-line"></i> Transverse
+<i class="fa-solid fa-palette"></i> Créatif
 </p>
 <p class="m-1 block rounded bg-theme-light px-3 py-1 font-bold hover:bg-primary hover:text-white dark:bg-darkmode-theme-light dark:hover:bg-darkmode-primary dark:hover:text-dark">
-<i class="fa-solid fa-palette"></i> Créatif
+<i class="fa-solid fa-arrow-down-up-across-line"></i> Transverse
 </p>
 <p class="m-1 block rounded bg-theme-light px-3 py-1 font-bold hover:bg-primary hover:text-white dark:bg-darkmode-theme-light dark:hover:bg-darkmode-primary dark:hover:text-dark">
 <i class="fa-solid fa-cloud-sun-rain"></i> Résilient
@@ -46,6 +44,17 @@ Informatique | Design | Créations
 <div class="col-span-1 xl:col-span-2">
 
 ### Expérience Professionnelle
+
+#### Ingénieur Chef de Projet
+
+**IXO Engineering, Villebéon** _(Télétravail)_ (07/2025 - _actuel_)
+
+- Création d'un capteur monté sur tarière de forage
+  - Conception et Réalisation de la carte électronique (KiCAD)
+  - Conception et Réalisation du boîtier mécanique (FreeCAD)
+  - Développement du firmware (C, STM32, ChibiOS)
+- Supervision de centrale d'enrobé (Delphi)
+- Site internet de l'entreprise et vidéos de promotion (Astro, TailwindCSS, Kdenlive)
 
 #### Ingénieur Recherche et Développement
 
@@ -120,14 +129,17 @@ Informatique | Design | Créations
 
 <div class="col-span-1">
 
-| **Logiciels/Frameworks**                                                                      |              |
-| --------------------------------------------------------------------------------------------- | ------------ |
-| {{< icons/icon vendor=dev name="linux/linux-original" className="hi-svg-2" >}} Linux          | 🟢🟢🟢🟢🟢🟢 |
-| {{< icons/icon vendor=custom name="libreoffice"       className="hi-svg-2" >}} LibreOffice    | 🟢🟢🟢🟢🟢⚪ |
-| {{< icons/icon vendor=custom name="msoffice365"       className="hi-svg-2" >}} Office 360     | 🟢🟢🟢⚪⚪⚪ |
-| {{< icons/icon vendor=custom name="doors"             className="hi-svg-2" >}} Doors          | 🟢🟢🟢🟢⚪⚪ |
-| {{< icons/icon vendor=custom name="autosar"           className="hi-svg-2" >}} aSpice/AUTOSAR | 🟢🟢🟢🟢🟢⚪ |
-| {{< icons/icon vendor=dev name="git/git-original"     className="hi-svg-2" >}} Git / Jira     | 🟢🟢🟢🟢🟢⚪ |
+<table>
+<tr><th><strong>Logiciels/Frameworks</strong></th><th></th></tr>
+<tr><td>{{< icons/icon vendor=dev name="linux/linux-original" className="hi-svg-2" >}} Linux</td><td class="whitespace-nowrap">🟢🟢🟢🟢🟢🟢</td></tr>
+<tr><td>{{< icons/icon vendor=custom name="kicad"             className="hi-svg-2" >}} KiCad</td><td class="whitespace-nowrap">🟢🟢🟢🟢🟢🟢</td></tr>
+<tr><td>{{< icons/icon vendor=custom name="freecad"           className="hi-svg-2" >}} FreeCAD</td><td class="whitespace-nowrap">🟢🟢🟢🟢🟢🟢</td></tr>
+<tr><td>{{< icons/icon vendor=custom name="libreoffice"       className="hi-svg-2" >}} LibreOffice</td><td class="whitespace-nowrap">🟢🟢🟢🟢🟢⚪</td></tr>
+<tr><td>{{< icons/icon vendor=custom name="msoffice365"       className="hi-svg-2" >}} Office 360</td><td class="whitespace-nowrap">🟢🟢🟢⚪⚪⚪</td></tr>
+<tr><td>{{< icons/icon vendor=custom name="doors"             className="hi-svg-2" >}} Doors</td><td class="whitespace-nowrap">🟢🟢🟢🟢⚪⚪</td></tr>
+<tr><td>{{< icons/icon vendor=custom name="autosar"           className="hi-svg-2" >}} aSpice/AUTOSAR</td><td class="whitespace-nowrap">🟢🟢🟢🟢🟢⚪</td></tr>
+<tr><td>{{< icons/icon vendor=dev name="git/git-original"     className="hi-svg-2" >}} Git / Jira</td><td class="whitespace-nowrap">🟢🟢🟢🟢🟢⚪</td></tr>
+</table>
 
 </div>
 
@@ -142,7 +154,7 @@ Informatique | Design | Créations
 | {{< icons/icon vendor=dev name="html5/html5-original"           className="hi-svg-2" >}} HTML5/CSS3 | 🟢🟢🟢🟢🟢⚪ |
 | {{< icons/icon vendor=dev name="javascript/javascript-original" className="hi-svg-2" >}} JavaScript | 🟢🟢🟢⚪⚪⚪ |
 | {{< icons/icon vendor=dev name="java/java-original"             className="hi-svg-2" >}} Java       | 🟢🟢🟢⚪⚪⚪ |
-| {{< icons/icon vendor=custom name="rustacean"                   className="hi-svg-2" >}} Rust       | 🟢🟢🟢⚪⚪⚪ |
+| {{< icons/icon vendor=custom name="rustacean"                   className="hi-svg-2" >}} Rust       | 🟢🟢⚪⚪⚪⚪ |
 
 </div>
 
@@ -156,10 +168,10 @@ Informatique | Design | Créations
 
 ### Autres Activités
 
+- {{< icons/icon vendor=custom name="twitch" className="hi-svg" >}} Streaming
 - 🍪 Agent de Restauration **Titre Professionnel**
+- 🔋 Électronique et Créations
 - ✏️ Dessin
-- 🌐 Webmaster Bénévole
 - 🚑 PSC1 (SST à renouveler)
-- 🌄 Animateur de Colonies
+- 🌄 Ancien Animateur de Colonies
 - 🖋️ Écriture
-- 📸 Photographie
