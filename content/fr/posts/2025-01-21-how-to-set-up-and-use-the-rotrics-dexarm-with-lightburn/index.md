@@ -220,7 +220,7 @@ La macro _Home Reset_ garantit que le bras est aligné avec le système de
 coordonnées de LightBurn. Elle effectue les actions suivantes :
 
 - `M1112` : Déplace le bras à la position d'origine usine.
-- `M888 P3` : Définit l'outil actuel comme étant le laser. Cette information est
+- `M888 P1` : Définit l'outil actuel comme étant le laser. Cette information est
   nécessaire pour que le bras traduise les coordonnées cartésiennes en rotations
   des axes, car la position exacte de la sortie de l'outil varie légèrement
   selon qu'il s'agit du faisceau laser, de la buse d'extrusion, du porte-crayon,

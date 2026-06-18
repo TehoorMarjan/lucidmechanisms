@@ -31,5 +31,9 @@
       "tailwindcss": {},
       "autoprefixer": {}
     }
-  }
+  },
+  "browserslist": [
+    "last 2 versions",
+    "not dead"
+  ]
 }

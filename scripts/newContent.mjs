@@ -61,7 +61,9 @@ exec(
           return;
         }
 
-        console.log("Title updated successfully.");
+        console.log(`Article created at: ${enContentPath}/index.md`);
+        console.log(`Assets folder created at: ${assetsPath}`);
+        console.log(`French content folder created at: ${frContentPath}`);
       });
     });
   },
