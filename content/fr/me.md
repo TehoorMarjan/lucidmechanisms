@@ -54,7 +54,8 @@ Informatique | Électronique | Design | Créations
   - Conception et Réalisation du boîtier mécanique (FreeCAD)
   - Développement du firmware (C, STM32, ChibiOS)
 - Supervision de centrale d'enrobé (Delphi)
-- Site internet de l'entreprise et vidéos de promotion (Astro, TailwindCSS, Kdenlive)
+- Site internet de l'entreprise et vidéos de promotion (Astro, TailwindCSS,
+  Kdenlive)
 
 #### Ingénieur Recherche et Développement
 
