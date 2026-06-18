@@ -209,7 +209,7 @@ The _Home Reset_ macro ensures the arm is aligned with LightBurn’s coordinate
 system. It
 
 - `M1112`: Moves the arm to the factory home position
-- `M888 P3`: Sets the current tool to be the laser. This information is needed
+- `M888 P1`: Sets the current tool to be the laser. This information is needed
   by the arm, when it translates the Cartesian coordinates to the axis
   rotations, because the exact position of the tool's output is slightly offset
   depending on whether it is the laser beam, the extruding nozzle, the pencil
